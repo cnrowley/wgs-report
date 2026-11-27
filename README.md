@@ -2,7 +2,12 @@
 
 > **Research use only.** Not a medical or diagnostic test; not produced in an accredited laboratory; do not use it to make or change any medical decision. Polygenic scores are statistical tendencies developed mostly in European-ancestry cohorts and are less accurate, sometimes uninformative, in other ancestries. APOE and a schizophrenia polygenic score are computed by default and can be sensitive: use `--exclude apoe psychiatric` to leave them out. Every report and `results.json` carries this notice.
 
-Turn a personal whole-genome VCF (GRCh38, e.g. from DRAGEN or GATK) into a readable report:
+Turn a personal whole-genome VCF (GRCh38, e.g. from DRAGEN or GATK) into a readable report.
+
+A CRAM alone is not enough: the tool does not call a whole-genome VCF from it. It is also not a whole-genome annotator and does not
+use gnomAD or dbSNP. Setup still needs about 70 GB of 1000 Genomes data (see [Requirements](#requirements)).
+
+The report includes:
 
 * **Polygenic scores** for highly heritable traits that GWAS-derived scores predict well
   (height, BMI, lipids, lipoprotein(a), bone density, urate, bilirubin, coronary artery disease,
@@ -29,8 +34,12 @@ Turn a personal whole-genome VCF (GRCh38, e.g. from DRAGEN or GATK) into a reada
   supervised ADMIXTURE.
 * **Compare with your own lab results** (`--measured`) so the report can say where genetics and blood tests agree.
 
-Everything runs locally. Your genome never leaves your machine; the only network access is downloading
-public reference data (PGS Catalog weights, ClinVar).
+Analysis runs on your machine, and the wgs-report code does not upload your genome or genotypes. It downloads public reference
+data (for example PGS Catalog weights, ClinVar and the Ensembl GFF3). Some requests carry identifiers that can show what you are
+looking at: `query snp` sends an rsID to Ensembl if its coordinates are not in the bundled panel or your `--coords` file (`--offline`
+prevents this), `query pgs --pgs-id` requests that score from the PGS Catalog if it is not cached (`--score-file` avoids this), and
+`fetch-reference` requests sequences from EBI using the checksums in your CRAM header. This statement does not cover the network
+behaviour of the optional third-party tools.
 
 ## What the report looks like
 Screenshots are from a **public** genome (NA12878/HG001, Genome in a Bottle), never from a real user. The full tour is in

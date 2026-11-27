@@ -59,7 +59,9 @@ Each command prints its own `--help`. Third-party tools are downloaded by you in
 
 
 ## Quick queries: `wgsreport query`
-Ask one question of one genome without running the full report. All of it runs locally.
+Ask one question of one genome without running the full report. Your files are read locally, but two requests can show a server what
+you are looking at: `query snp` sends an rsID to Ensembl when its coordinates are not in the bundled panel or `--coords` (`--offline`
+prevents this), and `query pgs --pgs-id` requests that score from the PGS Catalog when it is not cached (`--score-file` avoids this).
 
 ```bash
 # SNPs: rsIDs or GRCh38 positions; the VCF must be bgzipped and indexed (tabix -p vcf file.vcf.gz)
