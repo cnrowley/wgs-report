@@ -1,0 +1,13 @@
+name: wgsreport
+channels: [conda-forge, bioconda]
+dependencies:
+  - python>=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pyyaml
+  - pytest
+  - bcftools>=1.15
+  - htslib
+  - plink2   # developed and tested with plink2 v2.00a6 (AVX2, 23 Nov 2023); `wgsreport doctor` requires >= 2.0

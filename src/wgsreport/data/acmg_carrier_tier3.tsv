@@ -1,0 +1,116 @@
+#ACMG Tier 3 carrier-screening genes: Gregg AR et al. Genet Med 2021;23:1793-1806, doi:10.1038/s41436-021-01203-z, Tables 1-6.
+# Transcribed from the published tables (gene symbol, first listed condition, inheritance AR/XL, source table). Gene list is a fact list; see docs/DATA_AND_LICENSES.md.
+gene	condition	inheritance	table
+HBB	Sickle cell anemia β-thalassemia	AR	1
+XPC	Xeroderma pigmentosum	AR	1
+TYR	Oculocutaneous albinism type 1A and 1B	AR	1
+CYP21A2	Congenital adrenal hyperplasia due to 21-hydroxylase	AR	1
+PAH	Phenylketonuria	AR	1
+CFTR	Cystic fibrosis	AR	1
+TNXB	Ehlers–Danlos-like syndrome due to tenascin-X deficiency	AR	1
+HEXA	Tay–Sachs disease	AR	1
+GJB2	Nonsyndromic hearing loss recessive 1A	AR	1
+DHCR7	Smith–Lemli–Opitz syndrome	AR	1
+ATP7B	Wilson disease	AR	1
+ASPA	Canavan disease	AR	1
+ACADM	Medium-chain acyl-coenzyme A dehydrogenase deficiency	AR	1
+NPHS1	Finnish congenital nephrotic syndrome	AR	1
+PMM2	Carbohydrate-deficient glycoprotein syndrome type Ia	AR	1
+FKTN	Cardiomyopathy, dilated, 1X	AR	1
+SLC26A4	Deafness autosomal recessive 4	AR	1
+ERCC2	Cerebrooculofacioskeletal syndrome 2	AR	1
+DYNC2H1	Short-rib thoracic dysplasia 3 with or without polydactyly	AR	1
+CEP290	Joubert syndrome 5	AR	2
+GBE1	Glycogen storage disease, type IV	AR	2
+GAA	Glycogen storage disease, type II (Pompe disease)	AR	2
+CHRNE	Myasthenic syndrome, congenital, 4A, slow-channel	AR	2
+G6PC	Glycogen storage disease type IA	AR	2
+OCA2	Oculocutaneous albinism brown and type II	AR	2
+COL7A1	Recessive dystrophic epidermolysis bullosa	AR	2
+ABCC8	Diabetes mellitus, permanent neonatal 3	AR	2
+ALDOB	Hereditary fructosuria	AR	2
+FANCC	Fanconi anemia, complementation group C	AR	2
+GRIP1	Fraser syndrome	AR	2
+BCKDHB	Maple syrup urine disease	AR	2
+ANO10	Spinocerebellar ataxia 10	AR	2
+NAGA	Schindler disease, type 1	AR	2
+SMPD1	Niemann–Pick disease, type A	AR	2
+USH2A	Usher syndrome, type 2A	AR	2
+MMUT	Methylmalonic aciduria–methylmalonyl–CoA mutase	AR	2
+CPT2	Carnitine palmitoyltransferase II deficiency, infantile	AR	2
+AHI1	Joubert syndrome 3	AR	2
+DHDDS	Congenital disorder of glycosylation type 1	AR	3
+SLC19A3	Basal ganglia disease, biotin-responsive	AR	3
+GALT	Galactosemia	AR	3
+CYP11A1	Adrenal insufficiency, congenital, with 46, XY sex reversal,	AR	3
+TF	Atransferrinemia	AR	3
+MMACHC	Methylmalonic aciduria with homocystinuria cblC type	AR	3
+ABCA3	Surfactant metabolism dysfunction, pulmonary 3	AR	3
+GBA	Gaucher disease, type I	AR	3
+MCOLN1	Mucolipidosis type IV	AR	3
+GNPTAB	Mucolipidosis type II alpha/beta	AR	3
+AGA	Aspartylglucosaminuria	AR	3
+PCDH15	Deafness, autosomal recessive 23	AR	3
+FAH	Tyrosinemia type I	AR	3
+AIRE	Autoimmune polyendocrinopathy syndrome type I	AR	3
+BBS2	Bardet–Biedl syndrome 2	AR	3
+CYP27A1	Cerebrotendinous xanthomatosis	AR	3
+CCDC88C	Congenital hydrocephalus 1	AR	3
+FMO3	Trimethylaminuria	AR	3
+TMEM216	Joubert syndrome 2	AR	3
+CNGB3	Achromatopsia 3	AR	3
+MCPH1	Primary microcephaly 1, recessive	AR	3
+SLC37A4	Glycogen storage disease Ib	AR	3
+PRF1	Hemophagocytic lymphohistiocytosis, familial, 2	AR	3
+SCO2	Mitochondrial complex IV deficiency, nuclear type 2	AR	3
+AGXT	Hyperoxaluria, primary type I	AR	3
+ACADVL	Very long chain acyl-CoA dehydrogenase deficiency	AR	4
+ASL	Argininosuccinate aciduria	AR	4
+EVC2	Chondroectodermal dysplasia	AR	4
+ARSA	Metachromatic leukodystrophy	AR	4
+MVK	Hyper-IgD syndrome	AR	4
+PKHD1	Autosomal recessive polycystic kidney disease	AR	4
+BTD	Biotinidase deficiency	AR	4
+ALPL	Hypophosphatasia, adult	AR	4
+BBS1	Bardet–Biedl syndrome 1	AR	4
+CLCN1	Congenital myotonia, autosomal recessive form	AR	4
+CYP27B1	Vitamin D–dependent rickets, type 1	AR	4
+POLG	Mitochondrial DNA depletion syndrome 4A	AR	4
+MCCC2	3-methylcrotonyl CoA carboxylase 2 deficiency	AR	4
+MLC1	Megalencephalic leukoencephalopathy with	AR	4
+ACAT1	ɑ-Methylacetoacetic aciduria	AR	4
+CC2D2A	Joubert syndrome 9	AR	4
+SLC26A2	Epiphyseal dysplasia, multiple, 4	AR	4
+CBS	Homocystinuria, B6 responsive and nonresponsive	AR	4
+LRP2	Donnai–Barrow syndrome	AR	4
+IDUA	Mucopolysaccharidosis, Ih (Hurler S)	AR	4
+FKRP	Muscular dystrophy–dystroglycanopathy, type A, 5	AR	4
+RNASEH2B	Aicardi Goutieres syndrome 2	AR	4
+RARS2	Pontocerebellar hypoplasia type 6	AR	4
+HBA1	alpha-thalassemia	AR	5
+HBA2	alpha-thalassemia	AR	5
+SMN1	Spinal muscular atrophy	AR	5
+HPS1	Hermansky-Pudlak syndrome 1	AR	5
+HPS3	Hermansky-Pudlak syndrome 3	AR	5
+ELP1	Familial dysautonomia	AR	5
+FXN	Friedreich ataxia	AR	5
+DLD	Dihydrolipoamide dehydrogenase deficiency	AR	5
+NEB	Nemaline myopathy 2	AR	5
+CLRN1	Usher syndrome 3a	AR	5
+BLM	Bloom syndrome	AR	5
+ABCD1	Adrenoleukodystrophy (ALD)	XL	6
+AFF2	Mental retardation, X-linked, associated with fragile site FRAXE	XL	6
+ARX	Developmental and epileptic encephalopathy 1 (DEE1)	XL	6
+DMD	Muscular dystrophy, Becker type (BMD)	XL	6
+F8	Hemophilia A (HEMA)	XL	6
+F9	Hemophilia B (HEMB)	XL	6
+FMR1	Fragile X syndrome (FXS)	XL	6
+GLA	Fabry disease	XL	6
+L1CAM	Hydrocephalus due to congenital stenosis of aqueduct of Sylvius (HSAS)	XL	6
+MID1	Opitz GBBB syndrome, type I (GBBB1)	XL	6
+NR0B1	Adrenal hypoplasia, congenital (AHC)	XL	6
+OTC	Ornithine transcarbamylase deficiency	XL	6
+PLP1	Spastic paraplegia 2, X-linked (SPG2)	XL	6
+RPGR	Retinitis pigmentosa 3 (RP3; RP)	XL	6
+RS1	Retinoschisis 1, X-linked, juvenile (RS1)	XL	6
+SLC6A8	Cerebral creatine deficiency syndrome 1 (CCDS1)	XL	6

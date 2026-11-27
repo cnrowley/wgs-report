@@ -1,0 +1,501 @@
+# Trait registry: which polygenic scores (PGS Catalog, https://www.pgscatalog.org) are used,
+# and the published evidence that justifies reporting them.
+#
+# INCLUSION RULES (applied by hand when curating this file; see docs/METHODS.md)
+#   1. The trait is highly heritable (twin/family h2 >= ~0.4).
+#   2. A published PGS predicts it well in held-out European-ancestry samples:
+#        quantitative traits: variance explained (R2 = r^2) >= 0.09  (tier A >= 0.20, tier B 0.09-0.20; tiers rank published predictive strength only, not replication or evidence quality)
+#        binary traits:       OR per SD >= ~1.6 (AUROC and liability-scale R2 are reported as context, not hard cut-offs:
+#                             both depend on prevalence and cohort)
+#   3. The score is available as GRCh38-harmonized weights for (almost) all of its variants.
+#   4. The trait is meaningful to a person reading their own report.
+#   Tier C = fails rule 2 but is reported because the user explicitly asked for it; read with caution.
+#
+# FIELDS
+#   id            short key
+#   label         display name
+#   pgs           PGS Catalog score id (primary score)
+#   kind          quantitative | binary
+#   h2_twin       twin/family heritability (rounded literature value; see references)
+#   r2            held-out R2 of the score alone, European ancestry (quantitative traits)
+#   r2_source     where r2 came from
+#   or_per_sd     odds/hazard ratio per 1 SD of the score (binary traits)
+#   auroc         AUROC range reported (binary traits)
+#   metric_note   free text on the evidence
+#   unit/mean/sd  optional absolute phenotype scale used to translate the score into units
+#   sex           restrict to a sex ("male"/"female"); omitted = both
+#   tier          A | B | C
+#   cite          citation for the score
+#   crosscheck    second genome-wide score, standardised against the reference panel like the primary one
+#   variant_set   optional PGS Catalog id of a SHORT explicit-weight score (<~500 variants, weights in the trait's units). It is not
+#                 standardised; the carried variants and their summed weight are reported (see variant_scores.py)
+#   r2_by_ancestry   held-out R2 of the same score outside Europeans, keyed by 1000G super-population (SAS EAS AFR AMR); used by
+#                 registry.for_ancestry to recompute accuracy and tier when the user is not European
+#   alt_scores    {group: {pgs, r2, source}}: a different score that is better in that group; used only if its R2 beats the default's there
+#   variant_set_primary / variant_set_threshold   headline from the variant set instead of the percentile; threshold = guideline cut-off in the same unit
+#   variant_set_unit   unit of those weights
+#   related_rsids / related_not_in_score   well-known large-effect SNPs; flag that the primary score cannot see them
+#   related_text {rsid: wording} replaces the SNP panel note when the SNP's meaning for this trait differs from its panel note
+#   related_effect {rsid: up|down}   direction of each related variant's effect on the trait (the override fires only when the score reads against it)
+
+traits:
+  - id: height
+    label: Adult height
+    pgs: PGS002804
+    kind: quantitative
+    h2_twin: 0.80
+    r2: 0.40
+    r2_source: "Yengo et al. 2022 (independent European-ancestry validation; R2 ~0.40)"
+    unit: cm
+    mean: {male: 178.0, female: 164.5}
+    sd: {male: 7.0, female: 6.5}
+    tier: A
+    cite: "Yengo L et al. Nature 2022, doi:10.1038/s41586-022-05275-y"
+    crosscheck: PGS002146     # Prive 2022 LDpred2 height score (partial r 0.61 => R2 ~0.38 in UKB hold-out)
+
+  - id: bmi
+    label: Body-mass index
+    pgs: PGS002161
+    kind: quantitative
+    h2_twin: 0.75
+    r2: 0.134
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.366"
+    unit: "kg/m2"
+    mean: {male: 27.5, female: 27.0}
+    sd: {male: 4.5, female: 5.5}
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: lpa
+    label: Lipoprotein(a)
+    related_rsids: [rs10455872, rs3798220]
+    # Checked against PGS002181: rs10455872 is not among its variants and rs3798220 has weight 0, so the score cannot see the two best-known
+    # Lp(a)-raising SNPs (Prive's scores use HapMap3-based variants). The report therefore overrides the score's reading when either is carried.
+    related_not_in_score: true
+    # Explicit-weight cross-check (variant_scores.py): 43 conditionally independent LPA-region variants, weights in nmol/L, derived in
+    # Danish cohorts and evaluated in UK Biobank Europeans (R2 0.60, n=351k; R2 0.04-0.11 in African, East and South Asian samples).
+    variant_set: PGS000667
+    variant_set_unit: "nmol/L"
+    variant_set_primary: true     # a few large-effect variants decide this trait: the explicit-variant total is the headline, the genome-wide percentile is background
+    variant_set_threshold: 125    # nmol/L (about 50 mg/dL): the risk-enhancing Lp(a) level in the 2018 AHA/ACC cholesterol guideline
+    pgs: PGS002181
+    kind: quantitative
+    h2_twin: 0.90
+    r2: 0.336
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.580"
+    metric_note: "Dominated by the LPA locus; the KIV-2 copy-number repeat is not captured by SNP scores."
+    tier: A
+    # Held-out R2 outside Europeans (UK Biobank; PGS Catalog performance metrics, partial r squared). registry.for_ancestry uses these:
+    # PGS000689 (snpnet, Sinnott-Armstrong 2021) beats the default in South and East Asians.
+    r2_by_ancestry: {SAS: 0.087, EAS: 0.021, AFR: 0.0}
+    alt_scores:
+      SAS: {pgs: PGS000689, r2: 0.167, source: "Sinnott-Armstrong 2021, UK Biobank South Asian, n=6453, R2 0.167 (PGS Catalog)"}
+      EAS: {pgs: PGS000689, r2: 0.062, source: "Sinnott-Armstrong 2021, UK Biobank East Asian, n=980, R2 0.062 (PGS Catalog)"}
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: apoa1
+    label: Apolipoprotein A-I
+    category: blood
+    pgs: PGS001888
+    kind: quantitative
+    h2_twin: 0.55          # approximate: twin/family estimates for apoA-I are roughly 0.4-0.7
+    r2: 0.168
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out (n=17,339), partial r = 0.410"
+    r2_by_ancestry: {SAS: 0.132, EAS: 0.122, AFR: 0.049}
+    metric_note: "Main protein of HDL; correlates with HDL-C but is a separate measurement."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: ldl
+    label: LDL cholesterol
+    related_rsids: [rs429358, rs7412, rs11591147]
+    related_effect: {rs429358: up, rs7412: down, rs11591147: down}
+    related_text: {rs429358: "APOE e4-defining allele, which tends to raise LDL", rs7412: "APOE e2-defining allele, which tends to lower LDL", rs11591147: "PCSK9 R46L loss-of-function allele, which lowers LDL"}
+    related_not_in_score: true   # locus check (docs/VALIDATION.md): not among the score's variants
+    pgs: PGS002150
+    kind: quantitative
+    h2_twin: 0.60
+    r2: 0.112
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.335"
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: hdl
+    label: HDL cholesterol
+    pgs: PGS002172
+    kind: quantitative
+    h2_twin: 0.60
+    r2: 0.201
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.449"
+    tier: A
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: tg
+    label: Triglycerides
+    pgs: PGS002197
+    kind: quantitative
+    h2_twin: 0.50
+    r2: 0.134
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.366"
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: bmd
+    label: Bone mineral density (heel)
+    pgs: PGS002173
+    kind: quantitative
+    h2_twin: 0.70
+    r2: 0.196
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.443"
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: urate
+    label: Serum urate
+    pgs: PGS002229
+    kind: quantitative
+    h2_twin: 0.50
+    r2: 0.141
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.376"
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  - id: bilirubin
+    label: Total bilirubin
+    pgs: PGS002160
+    kind: quantitative
+    h2_twin: 0.50
+    r2: 0.355
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.596"
+    metric_note: "Dominated by UGT1A1 (Gilbert syndrome locus)."
+    tier: A
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+
+  # --- Blood panel (UK Biobank blood counts / biochemistry; Prive 2022 LDpred2 scores) ---------------
+  # h2_twin for these is a rounded, approximate literature value; partial r is from the first (largest) European test set.
+  - id: rbc
+    label: "Red blood cell count"
+    category: blood
+    pgs: PGS002123
+    kind: quantitative
+    h2_twin: 0.6
+    r2: 0.152
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.39"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: hb
+    label: "Hemoglobin"
+    category: blood
+    pgs: PGS002142
+    kind: quantitative
+    h2_twin: 0.55
+    r2: 0.113
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3358"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: hct
+    label: "Hematocrit"
+    category: blood
+    pgs: PGS002141
+    kind: quantitative
+    h2_twin: 0.6
+    r2: 0.100
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3167"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: mcv
+    label: "Mean corpuscular volume (MCV)"
+    category: blood
+    pgs: PGS002207
+    kind: quantitative
+    h2_twin: 0.7
+    r2: 0.193
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.4393"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: mch
+    label: "Mean corpuscular hemoglobin (MCH)"
+    category: blood
+    pgs: PGS002206
+    kind: quantitative
+    h2_twin: 0.7
+    r2: 0.182
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.427"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: rdw
+    label: "Red cell distribution width (RDW)"
+    category: blood
+    pgs: PGS002122
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.112
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3341"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: plt
+    label: "Platelet count"
+    category: blood
+    pgs: PGS002191
+    kind: quantitative
+    h2_twin: 0.7
+    r2: 0.226
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.4757"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: A
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: mpv
+    label: "Mean platelet volume (MPV)"
+    category: blood
+    pgs: PGS002189
+    kind: quantitative
+    h2_twin: 0.7
+    r2: 0.351
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.5923"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: A
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: wbc
+    label: "White blood cell count"
+    category: blood
+    pgs: PGS002180
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.129
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3596"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: neut
+    label: "Neutrophil count"
+    category: blood
+    pgs: PGS002187
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.106
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3263"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: lymph
+    label: "Lymphocyte count"
+    category: blood
+    pgs: PGS002183
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.128
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3574"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: mono
+    label: "Monocyte count"
+    category: blood
+    pgs: PGS002186
+    kind: quantitative
+    h2_twin: 0.4
+    r2: 0.161
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.4013"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: hba1c
+    label: "HbA1c (glycated hemoglobin)"
+    category: blood
+    pgs: PGS002171
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.113
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3359"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: creat
+    label: "Creatinine"
+    category: blood
+    pgs: PGS002163
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.125
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.353"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: cystc
+    label: "Cystatin C"
+    category: blood
+    pgs: PGS002165
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.166
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.4072"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: ggt
+    label: "Gamma-glutamyl transferase (GGT)"
+    category: blood
+    pgs: PGS002182
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.160
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3999"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: alp
+    label: "Alkaline phosphatase (ALP)"
+    category: blood
+    pgs: PGS002157
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.208
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.4562"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: A
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: crp
+    label: "C-reactive protein (CRP)"
+    category: blood
+    pgs: PGS002164
+    kind: quantitative
+    h2_twin: 0.4
+    r2: 0.140
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.3745"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: shbg
+    label: "Sex hormone-binding globulin (SHBG)"
+    category: blood
+    pgs: PGS002195
+    kind: quantitative
+    h2_twin: 0.6
+    r2: 0.174
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.417"
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+  - id: apob
+    label: "Apolipoprotein B"
+    related_rsids: [rs429358, rs7412, rs11591147]
+    related_effect: {rs429358: up, rs7412: down, rs11591147: down}
+    related_text: {rs429358: "APOE e4-defining allele, which tends to raise LDL and apolipoprotein B", rs7412: "APOE e2-defining allele, which tends to lower LDL and apolipoprotein B", rs11591147: "PCSK9 R46L loss-of-function allele, which lowers LDL and apolipoprotein B"}
+    related_not_in_score: true   # locus check (docs/VALIDATION.md): not among the score's variants
+    category: blood
+    pgs: PGS002102
+    kind: quantitative
+    h2_twin: 0.5
+    r2: 0.153
+    r2_source: "Prive et al. 2022, UK Biobank European hold-out, partial r = 0.391"
+    r2_by_ancestry: {SAS: 0.075, EAS: 0.096, AFR: 0.067}     # same score, UK Biobank held-out (scripts/portability_table.py)
+    metric_note: "Genetic tendency only; measured values depend strongly on iron/B12 status, inflammation, medication, hydration and acute illness."
+    tier: B
+    cite: "Prive F et al. AJHG 2022, doi:10.1016/j.ajhg.2021.11.008"
+
+  # --- Disease risk (binary) ---------------------------------------------------------------
+  - id: cad
+    label: Coronary artery disease
+    related_rsids: [rs10455872]
+    related_effect: {rs10455872: up}
+    related_not_in_score: true   # locus check (docs/VALIDATION.md): not among the score's variants
+    pgs: PGS003727
+    kind: binary
+    h2_twin: 0.50
+    or_per_sd: 1.67
+    auroc: "~0.75-0.80 with age/sex covariates (UK Biobank)"
+    metric_note: "Hazard ratio per SD in UK Biobank European ancestry (n=308k, 10.5k cases)."
+    tier: A
+    cite: "Patel AP et al. Nat Med 2023, doi:10.1038/s41591-023-02429-x"
+
+  - id: t2d
+    label: Type 2 diabetes
+    pgs: PGS003443
+    kind: binary
+    h2_twin: 0.50
+    or_per_sd: 1.86
+    auroc: "0.73 (All of Us, European)"
+    metric_note: "OR per SD in All of Us European ancestry; HR/SD 1.98 in INTERVAL."
+    tier: B
+    cite: "Huerta-Chagoya A et al. Diabetologia 2023, doi:10.1007/s00125-023-05912-9"
+
+  - id: prostate
+    label: Prostate cancer
+    related_rsids: [rs1447295]
+    related_effect: {rs1447295: up}
+    related_not_in_score: true   # locus check (docs/VALIDATION.md): not among the score's variants
+    pgs: PGS000662
+    kind: binary
+    h2_twin: 0.57
+    or_per_sd: 2.0
+    auroc: "0.77-0.83 (UK Biobank, European)"
+    metric_note: "OR of top decile vs 40-60th percentile ~4.2 in UK Biobank; OR/SD ~2.0-2.6."
+    sex: male
+    tier: A
+    cite: "Conti DV et al. Nat Genet 2021, doi:10.1038/s41588-020-00748-0"
+
+  - id: af
+    label: Atrial fibrillation (male-specific score)
+    related_rsids: [rs2200733]
+    related_effect: {rs2200733: up}
+    related_not_in_score: true   # locus check (docs/VALIDATION.md): not among the score's variants
+    pgs: PGS005292
+    crosscheck: PGS005289
+    kind: binary
+    h2_twin: 0.60
+    or_per_sd: 1.9
+    auroc: "0.684 (score alone, 7,525 European samples, prevalent AF; no covariates)"
+    metric_note: "Reported R2 0.128 and AUROC 0.684 (PGS Catalog PPM023000); OR/SD is DERIVED from the AUROC (binormal approximation), not reported. A different 2026 score (Haydarlou et al., PGS012532, 7.4M variants) reports OR/SD 1.89 in 124k Europeans. Twin heritability 0.62 (95% CI 0.55-0.68; Danish twin study, Christophersen 2009 Circ Arrhythm Electrophysiol, as reported in secondary sources). Case count of the evaluation set not stated in the catalog; possible overlap with the UK Biobank GWAS used for development is not excluded."
+    sex: male
+    tier: B
+    cite: "Jorda P et al. NPJ Genom Med 2025, doi:10.1038/s41525-025-00515-2"
+
+  - id: melanoma
+    label: Melanoma (skin)
+    related_rsids: [rs1805007, rs1805008, rs1805009, rs1805006, rs885479]
+    related_effect: {rs1805007: up, rs1805008: up, rs1805009: up, rs1805006: up, rs885479: up}
+    related_not_in_score: true   # locus check (docs/VALIDATION.md): not among the score's variants
+    pgs: PGS019972
+    kind: binary
+    h2_twin: 0.58
+    or_per_sd: 1.40
+    auroc: "0.60 (UK Biobank European)"
+    metric_note: "OR 1.40 (95% CI 1.36-1.44) as listed in the PGS Catalog for UK Biobank (4,555 cases); presumed per SD (not verified). Twin heritability 0.58 (Mucci 2016 JAMA, via press coverage; the full paper was not checked). Fails the OR/AUROC rule: shown as a percentile only."
+    tier: C
+    cite: "Hu J et al. PLoS Genet 2026, doi:10.1371/journal.pgen.1012308"
+
+  # --- Psychiatric (on by default once built locally from PGC3 summary statistics: `wgsreport build-score pgc3-scz`) ---
+  - id: scz
+    label: Schizophrenia (PGC3 polygenic score)
+    pgs: "custom:pgc3_scz"
+    kind: binary
+    h2_twin: 0.80
+    or_per_sd: 2.3
+    auroc: "median 0.72 across European cohorts (leave-one-out, P<0.05 clumped score)"
+    metric_note: "Trubetskoy 2022: median liability R2 0.073; top centile vs rest OR 5.6 (CI 4.9-6.5); top vs bottom centile OR 39. OR per SD (2.3) is DERIVED from the median AUROC under an equal-variance binormal model, not reported by the paper. The authors state the score is insufficient for predicting diagnosis in the general population. Locally rebuilt with the paper's P+T recipe, not the authors' exact weights."
+    validation:
+      - "Paper text: median liability R2 0.073 across leave-one-out cohorts (P<0.05 score); median EUR AUROC 0.72."
+      - "Suppl. Table 6a, European cohorts (36 datasets, 39,910 cases / 60,558 controls), top score quantile vs the rest: OR 4.9 (top 10%), 5.5 (top 5%), 7.0 (top 1%; CI 5.8-8.3)."
+      - "Suppl. Table 6b, top vs bottom quantile: OR 19.9 (10% vs 10%), 45 (1% vs 1%; CI 31-65)."
+      - "These use the authors' leave-one-out mixed-ancestry scores, not the locally rebuilt score used here."
+    sensitive: psychiatric
+    tier: B
+    cite: "Trubetskoy V et al. Nature 2022, doi:10.1038/s41586-022-04434-5 (summary statistics: figshare 19426775, CC BY 4.0, Fort Lauderdale terms)"
+
+# Candidates screened and NOT reported (shown in the report's screening appendix).
+excluded:
+  - {label: "Intelligence, cognitive performance and educational attainment", reason: "Excluded by maintainer decision, not because there is no signal: published scores explain roughly 5-16% of variance at the population level (educational attainment 12-16%, cognitive performance about 5-10%). The reasons are: for educational attainment the within-family (direct) effect is about half the population estimate (cognitive performance attenuates less, about 0.88 in one 2025 study), individual-level utility is poor, results differ across scores (locally built scores for the same person differed by tens of percentile points), and they are easily misused. Not implemented."}
+  - {label: "Schizophrenia", reason: "Included (on by default once built locally; `--exclude psychiatric` omits it): PGC3 scores reach AUROC ~0.72 / liability R2 ~0.07 (paper text). Reported as a locally-built score (PGC3 summary statistics cannot be shipped as weights). Do not use PGS002785 as a benchmark: it was evaluated on childhood behaviour, not case-control status."}
+  - {label: "Depression / neuroticism / happiness", reason: "PGS partial correlation <= 0.2 and h2 mostly environmental in twin data"}
+  - {label: "Systolic / diastolic blood pressure", reason: "PGS R2 ~0.06-0.07, below the R2 >= 0.09 cut-off"}
+  - {label: "Hair colour, skin colour, tanning", reason: "Good prediction, but UKB ordinal coding direction is ambiguous in PGS metadata; individual pigmentation SNPs (HERC2, MC1R, SLC45A2) are reported in the SNP panel instead"}
+  - {label: "Male-pattern baldness", reason: "Ordinal coding direction ambiguous in PGS metadata; reported via a lead-SNP panel only if available"}
+  - {label: "Glucose, urea, calcium, ALT/AST, albumin, vitamin D, testosterone", reason: "Held-out partial r 0.15-0.29 (R2 < 0.09), below the cut-off"}
+  - {label: "Most other common diseases (asthma, depression, cancers other than prostate, ...)", reason: "Partial correlations of the best scores are < 0.15"}

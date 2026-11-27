@@ -1,0 +1,1690 @@
+# Genes with a Definitive, Strong or Moderate ClinGen gene-disease validity curation inherited as autosomal recessive (AR) or X-linked (XL).
+# Source: ClinGen gene-disease validity curations, file created 2026-11-26 (https://search.clinicalgenome.org/kb/gene-validity/download); ClinGen data are CC0.
+# Regenerate with scripts/build_gene_inheritance.py. A gene that is absent has not been curated as recessive; that is not evidence that it is not.
+gene	moi	also_dominant	diseases
+A4GALT	AR		A4GALT-related congenital disorder of glycosylation
+AARS1	AR	yes	developmental and epileptic encephalopathy, 29
+AARS2	AR		mitochondrial disease
+AASS	AR		hyperlysinemia
+ABAT	AR		genetic developmental and epileptic encephalopathy
+ABCA3	AR		interstitial lung disease due to ABCA3 deficiency
+ABCA4	AR		ABCA4-related retinopathy
+ABCB4	AR		progressive familial intrahepatic cholestasis type 3
+ABCB7	XL		mitochondrial disease
+ABCC4	AR		qualitative platelet defect
+ABCC8	AR	yes	hyperinsulinemic hypoglycemia, familial, 1
+ABCD1	XL		adrenoleukodystrophy
+ABCD4	AR		methylmalonic acidemia with homocystinuria, type cblJ
+ABCG5	AR		sitosterolemia
+ABCG8	AR		sitosterolemia
+ABHD12	AR		PHARC syndrome
+ABHD5	AR		Dorfman-Chanarin disease
+ACAD8	AR		isobutyryl-CoA dehydrogenase deficiency
+ACAD9	AR		acyl-CoA dehydrogenase 9 deficiency
+ACADM	AR		medium chain acyl-CoA dehydrogenase deficiency
+ACADS	AR		short chain acyl-CoA dehydrogenase deficiency
+ACADSB	AR		2-methylbutyryl-CoA dehydrogenase deficiency
+ACADVL	AR		very long chain acyl-CoA dehydrogenase deficiency
+ACAT1	AR		beta-ketothiolase deficiency
+ACBD5	AR		acyl-CoA binding domain containing protein 5 deficiency
+ACE	AR		renal tubular dysgenesis - ACE
+ACO2	AR	yes	mitochondrial disease
+ACOX1	AR	yes	peroxisomal acyl-CoA oxidase deficiency
+ACOX2	AR		congenital bile acid synthesis defect 6
+ACSF3	AR		combined malonic and methylmalonic acidemia
+ACSL4	XL		non-syndromic X-linked intellectual disability
+ACTA1	AR	yes	alpha-actinopathy
+ACY1	AR		aminoacylase 1 deficiency
+ADA	AR		severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency
+ADA2	AR		obsolete deficiency of adenosine deaminase 2
+ADAM17	AR		inflammatory skin and bowel disease, neonatal, 1
+ADAM22	AR		developmental and epileptic encephalopathy
+ADAM9	AR		ADAM9-related retinopathy
+ADAMTS13	AR		congenital thrombotic thrombocytopenic purpura
+ADAMTS18	AR		microcornea-myopic chorioretinal atrophy
+ADAMTS9	AR		ciliopathy
+ADAR	AR	yes	ADAR-related type 1 interferonopathy
+ADAT3	AR		intellectual disability-strabismus syndrome
+ADD3	AR		complex neurodevelopmental disorder with motor features
+ADGRG1	AR		bilateral frontoparietal polymicrogyria
+ADGRV1	AR		Usher syndrome type 2
+ADK	AR		adenosine kinase deficiency
+ADSL	AR		adenylosuccinate lyase deficiency
+AFF2	XL		non-syndromic X-linked intellectual disability
+AFG2A	AR		syndromic complex neurodevelopmental disorder
+AGA	AR		aspartylglucosaminuria
+AGBL5	AR		inherited retinal dystrophy
+AGK	AR		mitochondrial disease
+AGL	AR		glycogen storage disease III
+AGPAT2	AR		lipodystrophy
+AGPS	AR		alkylglycerone-phosphate synthase deficiency
+AGRN	AR		congenital myasthenic syndrome 8
+AGTPBP1	AR		neurodegeneration, childhood-onset, with cerebellar atrophy
+AGXT	AR		alanine glyoxylate aminotransferase deficiency
+AHCY	AR		hypermethioninemia with deficiency of S-adenosylhomocysteine hydrolase
+AHI1	AR		Joubert syndrome 3
+AICDA	AR	yes	hyper-IgM syndrome type 2
+AIFM1	XL		Leigh syndrome; X-linked hereditary sensory and autonomic neuropathy with hearing loss
+AIMP1	AR		hypomyelinating leukodystrophy 3
+AIMP2	AR		leukodystrophy, hypomyelinating, 17
+AIPL1	AR		AIPL1-related retinopathy
+AIRE	AR		autoimmune polyendocrine syndrome type 1
+AK2	AR		reticular dysgenesis
+AKR1D1	AR		congenital bile acid synthesis defect 2
+ALAD	AR		porphyria due to ALA dehydratase deficiency
+ALAS2	XL		X-linked erythropoietic protoporphyria
+ALB	AR	yes	congenital analbuminemia
+ALDH4A1	AR		hyperprolinemia type 2
+ALDH5A1	AR		succinic semialdehyde dehydrogenase deficiency
+ALDH7A1	AR		pyridoxine-dependent epilepsy
+ALDOB	AR		hereditary fructose intolerance
+ALG1	AR		ALG1-congenital disorder of glycosylation
+ALG11	AR		ALG11-congenital disorder of glycosylation
+ALG12	AR		ALG12-congenital disorder of glycosylation
+ALG13	XL		genetic developmental and epileptic encephalopathy
+ALG2	AR		congenital disorder of glycosylation, type Ii
+ALG3	AR		ALG3-congenital disorder of glycosylation
+ALG6	AR		ALG6-congenital disorder of glycosylation 1C
+ALMS1	AR		Alstrom syndrome
+ALPK3	AR	yes	hypertrophic cardiomyopathy
+ALPL	AR	yes	ALPL-related autosomal recessive hypophosphatasia
+ALS2	AR		ALS2-related motor neuron disease
+ALX1	AR		frontonasal dysplasia - severe microphthalmia - severe facial clefting syndrome
+ALX3	AR		frontorhiny
+ALX4	AR		frontonasal dysplasia with alopecia and genital anomaly
+AMACR	AR		alpha-methylacyl-CoA racemase deficiency
+AMER1	XL		osteopathia striata with cranial sclerosis
+AMT	AR		glycine encephalopathy
+ANAPC1	AR		Rothmund-Thomson syndrome type 1
+ANGPTL3	AR		familial hypobetalipoproteinemia 2
+ANK3	AR		intellectual disability
+ANKS6	AR		nephronophthisis 16
+ANO10	AR		autosomal recessive spinocerebellar ataxia 10
+ANO5	AR	yes	autosomal recessive limb-girdle muscular dystrophy
+ANO6	AR		Scott syndrome
+ANOS1	XL		hypogonadotropic hypogonadism 1 with or without anosmia
+ANTXR1	AR		GAPO syndrome
+ANTXR2	AR		hyaline fibromatosis syndrome
+AP1B1	AR		ichthyosiform erythroderma, corneal involvement, and hearing loss
+AP1S1	AR		MEDNIK syndrome
+AP1S2	XL		X-linked syndromic complex neurodevelopmental disorder
+AP3B1	AR		Hermansky-Pudlak syndrome 2
+AP3B2	AR		genetic developmental and epileptic encephalopathy
+AP3D1	AR		Hermansky-Pudlak syndrome 10
+AP4B1	AR		AP-4 deficiency syndrome
+AP4E1	AR		AP-4 deficiency syndrome
+AP4M1	AR		AP-4 deficiency syndrome
+AP4S1	AR		AP-4 deficiency syndrome
+AP5Z1	AR		hereditary spastic paraplegia
+APC2	AR		lissencephaly spectrum disorders
+APOL1	AR		focal segmental glomerulosclerosis 4, susceptibility to
+AR	XL		Kennedy disease
+ARFGEF2	AR		periventricular heterotopia with microcephaly, autosomal recessive
+ARG1	AR		arginase deficiency
+ARHGDIA	AR		nephrotic syndrome, type 8
+ARHGEF18	AR		inherited retinal dystrophy
+ARHGEF9	XL		X-linked complex neurodevelopmental disorder
+ARL13B	AR		Joubert syndrome
+ARL2BP	AR		ciliopathy
+ARL6	AR		ciliopathy
+ARL6IP1	AR		hereditary spastic paraplegia
+ARMC2	AR		spermatogenic failure 38
+ARMC9	AR		Joubert syndrome 30
+ARPC1B	AR		platelet abnormalities with eosinophilia and immune-mediated inflammatory disease
+ARSA	AR		metachromatic leukodystrophy
+ARSB	AR		mucopolysaccharidosis type 6
+ARSL	XL		X-linked chondrodysplasia punctata 1
+ARX	XL		X-linked complex neurodevelopmental disorder; genetic developmental and epileptic encephalopathy
+ASAH1	AR		ASAH1-related sphingolipidosis
+ASL	AR		argininosuccinic aciduria
+ASNS	AR		congenital microcephaly - severe encephalopathy - progressive cerebral atrophy syndrome
+ASPA	AR		Canavan disease
+ASPM	AR		autosomal recessive primary microcephaly
+ASS1	AR		citrullinemia type I
+ATF6	AR		ATF6-related retinopathy
+ATG7	AR		spinocerebellar ataxia, autosomal recessive 31
+ATM	AR	yes	ataxia telangiectasia
+ATP13A2	AR		Kufor-Rakeb syndrome
+ATP1A2	AR	yes	fetal akinesia, respiratory insufficiency, microcephaly, polymicrogyria, and dysmorphic facies
+ATP5MK	AR		Leigh syndrome; mitochondrial disease
+ATP5PO	AR		mitochondrial disease
+ATP6AP1	XL		congenital disorder of glycosylation type II
+ATP6AP2	XL		ATP6AP2-related disorder
+ATP6V0A2	AR		autosomal recessive cutis laxa type 2A
+ATP6V1B1	AR		renal tubular acidosis, distal, 2, with progressive sensorineural hearing loss
+ATP7A	XL		Menkes disease; X-linked distal spinal muscular atrophy type 3
+ATP7B	AR		Wilson disease
+ATP8A2	AR		cerebellar ataxia, intellectual disability, and dysequilibrium
+ATRX	XL		ATR-X-related syndrome
+AUH	AR		3-methylglutaconic aciduria type 1
+AURKC	AR		spermatogenic failure 5
+AVPR2	XL		diabetes insipidus, nephrogenic, X-linked; nephrogenic syndrome of inappropriate antidiuresis
+B3GALNT2	AR		muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type a, 11
+B3GALT6	AR		B3GALT6-congenital disorder of glycosylation
+B3GLCT	AR		Peters plus syndrome
+B4GALNT1	AR		complex hereditary spastic paraplegia
+B4GALT1	AR		B4GALT1-congenital disorder of glycosylation
+B4GALT7	AR		Ehlers-Danlos syndrome, spondylodysplastic type, 1
+B4GAT1	AR		muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies), type A13
+B9D1	AR		ciliopathy
+B9D2	AR		ciliopathy
+BAAT	AR		bile acid CoA:amino acid N-acyltransferase deficiency
+BAG5	AR		cardiomyopathy, dilated, 2F
+BBIP1	AR		ciliopathy
+BBS1	AR		BBS1-related ciliopathy
+BBS10	AR		BBS10-related ciliopathy
+BBS12	AR		BBS12-related ciliopathy
+BBS2	AR		BBS2-related ciliopathy
+BBS4	AR		BBS4-related ciliopathy
+BBS5	AR		BBS5-related ciliopathy
+BBS7	AR		BBS7-related ciliopathy
+BBS9	AR		BBS9-related ciliopathy
+BCAP31	XL		severe motor and intellectual disabilities-sensorineural deafness-dystonia syndrome
+BCAT2	AR		hypervalinemia and hyperleucine-isoleucinemia
+BCKDHA	AR		maple syrup urine disease type 1A
+BCKDHB	AR		maple syrup urine disease type 1B
+BCKDK	AR		branched-chain keto acid dehydrogenase kinase deficiency
+BCL10	AR		immunodeficiency 37
+BCOR	XL		microphthalmia, syndromic 2
+BCS1L	AR		Bjornstad syndrome; mitochondrial disease
+BGN	XL		Meester-Loeys syndrome
+BIN1	AR		centronuclear myopathy
+BLM	AR		Bloom syndrome
+BLNK	AR		agammaglobulinemia 4, autosomal recessive
+BLOC1S1	AR		neurodevelopmental disorder
+BLOC1S3	AR		Hermansky-Pudlak syndrome 8
+BLOC1S5	AR		Hermansky-Pudlak syndrome 11
+BLOC1S6	AR		Hermansky-Pudlak syndrome 9
+BLTP1	AR		Alkuraya-Kucinskas syndrome
+BLVRA	AR		hyperbiliverdinemia
+BOLA3	AR		mitochondrial disease
+BPNT2	AR		chondrodysplasia with joint dislocations, gPAPP type
+BRAT1	AR		neonatal-onset encephalopathy with rigidity and seizures; neurodevelopmental disorder with cerebellar atrophy and with or without seizures
+BRCA1	AR	yes	Fanconi anemia, complementation group S
+BRCA2	AR	yes	Fanconi anemia complementation group D1
+BRIP1	AR	yes	Fanconi anemia complementation group J
+BRWD3	XL		X-linked syndromic intellectual disability
+BSCL2	AR	yes	lipodystrophy
+BSND	AR		Bartter disease type 4A
+BTD	AR		Leigh syndrome; biotinidase deficiency
+BTK	XL		Bruton-type agammaglobulinemia
+BUB1B	AR		mosaic variegated aneuploidy syndrome 1
+BVES	AR		autosomal recessive limb-girdle muscular dystrophy
+C19orf12	AR	yes	neurodegeneration with brain iron accumulation 4
+C1QA	AR		systemic lupus erythematosus related to C1QA
+C1QB	AR		C1Q deficiency; systemic lupus erythematosus related to C1QB
+C1QBP	AR		mitochondrial disease
+C1QC	AR		systemic lupus erythematosus related to C1QC
+C1R	AR		systemic lupus erythematosus
+C1S	AR		systemic lupus erythematosus
+C2CD3	AR		orofaciodigital syndrome type 14
+C4A	AR		systemic lupus erythematosus related to C4A
+CA2	AR		autosomal recessive osteopetrosis 3
+CA5A	AR		hyperammonemic encephalopathy due to carbonic anhydrase VA deficiency
+CA8	AR		cerebellar ataxia
+CABP2	AR		nonsyndromic genetic hearing loss
+CABP4	AR		cone-rod synaptic disorder, congenital nonprogressive
+CACNA1B	AR		complex neurodevelopmental disorder with motor features
+CACNA1D	AR	yes	sinoatrial node dysfunction and deafness
+CACNA1F	XL		CACNA1F-related retinopathy
+CACNA2D2	AR		complex neurodevelopmental disorder
+CACNA2D4	AR		CACNA2D4-related retinopathy
+CAD	AR		developmental and epileptic encephalopathy, 50
+CANT1	AR		Desbuquois dysplasia 1
+CAPN3	AR	yes	autosomal recessive limb-girdle muscular dystrophy
+CARD11	AR	yes	severe combined immunodeficiency due to CARD11 deficiency
+CARMIL2	AR		severe combined immunodeficiency due to CARMIL2 deficiency
+CARS2	AR		mitochondrial disease
+CASK	XL		X-linked syndromic intellectual disability
+CASP2	AR		intellectual developmental disorder, autosomal recessive 80, with variant lissencephaly
+CASP8	AR		autoimmune lymphoproliferative syndrome type 2B
+CASQ2	AR	yes	catecholaminergic polymorphic ventricular tachycardia
+CASR	AR	yes	neonatal severe primary hyperparathyroidism
+CAT	AR		acatalasia
+CAV1	AR	yes	congenital generalized lipodystrophy type 3
+CAVIN1	AR		lipodystrophy
+CBLB	AR		autoimmune disease, multisystem, infantile-onset, 3
+CBS	AR		classic homocystinuria
+CC2D1A	AR		complex neurodevelopmental disorder
+CC2D2A	AR		ciliopathy
+CCDC115	AR		CCDC115-CDG
+CCDC22	XL		Ritscher-Schinzel syndrome 2
+CCDC32	AR		cardiofacioneurodevelopmental syndrome
+CCDC39	AR		primary ciliary dyskinesia 14
+CCDC40	AR		primary ciliary dyskinesia 15
+CCN6	AR		progressive pseudorheumatoid arthropathy of childhood
+CCNO	AR		primary ciliary dyskinesia 29
+CCNQ	XL		syndactyly-telecanthus-anogenital and renal malformations syndrome
+CD19	AR		immunodeficiency, common variable, 3
+CD247	AR		immunodeficiency 25
+CD27	AR		lymphoproliferative syndrome 2
+CD28	AR		immunodeficiency 123 with HPV-related verrucosis
+CD2AP	AR	yes	focal segmental glomerulosclerosis 3, susceptibility to
+CD320	AR		methylmalonic acidemia due to transcobalamin receptor defect
+CD3D	AR		immunodeficiency 19
+CD3E	AR		immunodeficiency 18
+CD3G	AR		combined immunodeficiency due to CD3gamma deficiency
+CD40	AR		hyper-IgM syndrome type 3
+CD40LG	XL		hyper-IgM syndrome type 1
+CD70	AR		severe combined immunodeficiency due to CD70 deficiency
+CD79A	AR		agammaglobulinemia 3, autosomal recessive
+CD79B	AR		agammaglobulinemia 6, autosomal recessive
+CDAN1	AR		anemia, congenital dyserythropoietic, type 1a
+CDC14A	AR		hearing impairment and infertile male syndrome; nonsyndromic genetic hearing loss
+CDC45	AR		Meier-Gorlin syndrome 7
+CDCA7	AR		immunodeficiency-centromeric instability-facial anomalies syndrome 3
+CDH11	AR	yes	Elsahy-Waters syndrome
+CDH23	AR		nonsyndromic genetic hearing loss
+CDH3	AR		EEM syndrome
+CDHR1	AR		retinitis pigmentosa 65
+CDK5	AR		lissencephaly with cerebellar hypoplasia
+CDK5RAP2	AR		autosomal recessive primary microcephaly
+CDKL5	XL		CDKL5 disorder
+CDT1	AR		Meier-Gorlin syndrome 4
+CEACAM16	AR	yes	nonsyndromic genetic hearing loss
+CENPJ	AR		microcephaly 6 with or without short stature
+CEP104	AR		ciliopathy
+CEP120	AR		ciliopathy
+CEP152	AR		microcephaly with or without short stature
+CEP164	AR		CEP164-related ciliopathy
+CEP250	AR		cone-rod dystrophy and hearing loss 2
+CEP290	AR		CEP290-related ciliopathy
+CEP41	AR		ciliopathy
+CEP57	AR		mosaic variegated aneuploidy syndrome 2
+CEP78	AR		cone-rod dystrophy and hearing loss
+CEP83	AR		ciliopathy
+CERKL	AR		CERKL-related retinopathy
+CERS1	AR		progressive myoclonus epilepsy
+CFAP221	AR		primary ciliary dyskinesia
+CFAP298	AR		primary ciliary dyskinesia 26
+CFAP300	AR		ciliary dyskinesia, primary, 38
+CFAP410	AR		ciliopathy
+CFAP418	AR		ciliopathy
+CFAP43	AR		spermatogenic failure 19
+CFAP54	AR		ciliary dyskinesia, primary, 54
+CFAP74	AR		ciliary dyskinesia, primary, 49, without situs inversus
+CFH	AR	yes	C3 glomerulonephritis
+CFL2	AR		nemaline myopathy 7
+CFTR	AR		cystic fibrosis
+CHAT	AR		congenital myasthenic syndrome 6
+CHM	XL		choroideremia
+CHRNA1	AR		myasthenic syndrome, congenital, 1B, fast-channel
+CHRNB1	AR	yes	congenital myasthenic syndrome 2C
+CHRNG	AR		CHRNG-associated hypo-akinesia disorder of prenatal onset
+CHST14	AR		Ehlers-Danlos syndrome, musculocontractural type 1
+CHST3	AR		spondyloepiphyseal dysplasia with congenital joint dislocations
+CHST6	AR		macular corneal dystrophy
+CHSY1	AR		temtamy preaxial brachydactyly syndrome
+CHUK	AR		Bartsocas-Papas syndrome 2
+CIB2	AR		nonsyndromic genetic hearing loss
+CIDEC	AR		CIDEC-related familial partial lipodystrophy
+CIITA	AR		MHC class II deficiency
+CILK1	AR		ciliopathy
+CISD2	AR		Wolfram syndrome
+CLCN4	XL		X-linked complex neurodevelopmental disorder
+CLCN5	XL		Dent disease type 1
+CLCN7	AR	yes	autosomal recessive osteopetrosis 4
+CLDN14	AR		nonsyndromic genetic hearing loss
+CLDN16	AR		renal hypomagnesemia 3
+CLDN9	AR		hearing loss, autosomal recessive 116
+CLN3	AR		neuronal ceroid lipofuscinosis
+CLN5	AR		neuronal ceroid lipofuscinosis
+CLN6	AR		neuronal ceroid lipofuscinosis
+CLN8	AR		neuronal ceroid lipofuscinosis
+CLPP	AR		Perrault syndrome 3
+CLRN1	AR		Usher syndrome type 3
+CLRN2	AR		nonsyndromic genetic hearing loss
+CLXN	AR		ciliary dyskinesia, primary, 53
+CNGA1	AR		CNGA1-related retinopathy
+CNGA3	AR		CNGA3-related retinopathy
+CNGB1	AR		CNGB1-related retinopathy
+CNGB3	AR		CNGB3-related retinopathy
+CNKSR2	XL		X-linked complex neurodevelopmental disorder
+CNNM4	AR		Jalili syndrome
+CNTN2	AR		complex neurodevelopmental disorder
+CNTNAP2	AR		complex neurodevelopmental disorder
+COA6	AR		mitochondrial disease
+COA7	AR		mitochondrial disease
+COA8	AR		mitochondrial disease
+COG1	AR		COG1-congenital disorder of glycosylation
+COG4	AR	yes	COG4-congenital disorder of glycosylation
+COG5	AR		COG5-congenital disorder of glycosylation
+COG6	AR		COG6-congenital disorder of glycosylation
+COG7	AR		COG7-congenital disorder of glycosylation
+COG8	AR		COG8-congenital disorder of glycosylation
+COL11A2	AR	yes	nonsyndromic genetic hearing loss; otospondylomegaepiphyseal dysplasia
+COL18A1	AR		Knobloch syndrome 1
+COL1A2	AR	yes	Ehlers-Danlos syndrome, cardiac valvular type
+COL4A5	XL		Alport syndrome
+COL6A1	AR	yes	collagen 6-related myopathy
+COL6A2	AR	yes	collagen 6-related myopathy
+COL6A3	AR	yes	collagen 6-related myopathy
+COL7A1	AR		recessive dystrophic epidermolysis bullosa
+COL9A1	AR		Stickler syndrome, type 4
+COL9A3	AR		Stickler syndrome
+COLGALT1	AR		brain small vessel disease 3
+COQ2	AR		mitochondrial disease
+COQ4	AR		mitochondrial disease
+COQ5	AR		mitochondrial disease
+COQ6	AR		primary coenzyme Q10 deficiency 8
+COQ7	AR		distal hereditary motor neuropathy
+COQ8B	AR		mitochondrial disease
+COQ9	AR		mitochondrial disease
+CORO1A	AR		severe combined immunodeficiency due to CORO1A deficiency
+COX10	AR		Leigh syndrome; mitochondrial disease
+COX15	AR		mitochondrial disease
+COX16	AR		mitochondrial disease
+COX20	AR		mitochondrial disease
+COX5A	AR		mitochondrial disease
+COX6A1	AR		mitochondrial disease
+COX6A2	AR		mitochondrial disease
+COX6B1	AR		mitochondrial disease
+COXFA4	AR		mitochondrial disease
+CP	AR		aceruloplasminemia
+CPAMD8	AR		anterior segment dysgenesis 8
+CPLANE1	AR		Joubert syndrome 17
+CPS1	AR		carbamoyl phosphate synthetase I deficiency disease
+CPT1A	AR		carnitine palmitoyl transferase 1A deficiency
+CPT2	AR		carnitine palmitoyltransferase II deficiency
+CR2	AR		immunodeficiency, common variable, 7
+CRADD	AR		syndromic intellectual disability
+CRB1	AR		inherited retinal dystrophy
+CRB2	AR		focal segmental glomerulosclerosis 9
+CRBN	AR		intellectual disability
+CRLS1	AR		mitochondrial disease
+CRPPA	AR		myopathy caused by variation in CRPPA
+CSF1R	AR	yes	brain abnormalities, neurodegeneration, and dysosteosclerosis
+CSF2RA	AR		surfactant metabolism dysfunction, pulmonary, 4
+CSF2RB	AR		surfactant metabolism dysfunction, pulmonary, 5
+CSGALNACT1	AR		skeletal dysplasia, mild, with joint laxity and advanced bone age
+CSPP1	AR		Joubert syndrome 21
+CSTB	AR		Unverricht-Lundborg syndrome
+CTC1	AR		cerebroretinal microangiopathy with calcifications and cysts 1
+CTH	AR		cystathioninuria
+CTNS	AR		cystinosis
+CTPS1	AR		severe combined immunodeficiency due to CTPS1 deficiency
+CTSA	AR		galactosialidosis
+CTSD	AR		neuronal ceroid lipofuscinosis
+CTSF	AR		adult neuronal ceroid lipofuscinosis
+CTSK	AR		pycnodysostosis
+CUL4B	XL		intellectual developmental disorder, X-linked, syndromic, Cabezas type
+CWC27	AR		metaphyseal chondrodysplasia-retinitis pigmentosa syndrome
+CWF19L1	AR		autosomal recessive cerebellar ataxia
+CYB5A	AR		methemoglobinemia type 4
+CYB5R3	AR		methemoglobinemia due to deficiency of methemoglobin reductase
+CYC1	AR		mitochondrial disease
+CYP11B2	AR		familial hyperreninemic hypoaldosteronism type 2
+CYP1B1	AR		CYP1B1-related glaucoma with or without anterior segment dysgenesis
+CYP24A1	AR		hypercalcemia, infantile, 1
+CYP26B1	AR		lethal occipital encephalocele-skeletal dysplasia syndrome
+CYP27A1	AR		cerebrotendinous xanthomatosis
+CYP27B1	AR		vitamin D-dependent rickets, type 1A
+CYP2U1	AR		hereditary spastic paraplegia
+CYP4V2	AR		Bietti crystalline corneoretinal dystrophy
+CYP7B1	AR		CYP7B1-related disorder of oxysterol accumulation
+CYS1	AR		polycystic kidney disease
+D2HGDH	AR		mitochondrial disease
+DAG1	AR		neuromuscular disease caused by qualitative or quantitative defects of alpha-dystroglycan
+DARS1	AR		hypomyelination with brain stem and spinal cord involvement and leg spasticity
+DARS2	AR		mitochondrial disease
+DAW1	AR		visceral heterotaxy
+DBT	AR		maple syrup urine disease
+DCAF17	AR		Woodhouse-Sakati syndrome
+DCDC2	AR		ciliopathy
+DCHS1	AR		van Maldergem syndrome
+DCLRE1C	AR		severe combined immunodeficiency due to DCLRE1C deficiency
+DCX	XL		lissencephaly spectrum disorders
+DDB2	AR		xeroderma pigmentosum group E
+DDC	AR		aromatic L-amino acid decarboxylase deficiency
+DDHD1	AR		hereditary spastic paraplegia
+DDOST	AR		DDOST-congenital disorder of glycosylation
+DDR2	AR	yes	spondyloepimetaphyseal dysplasia-short limb-abnormal calcification syndrome
+DDX11	AR		Warsaw breakage syndrome
+DDX3X	XL		X-linked syndromic intellectual disability
+DEF6	AR		immunodeficiency 87 and autoimmunity
+DEGS1	AR		leukodystrophy, hypomyelinating, 18
+DGKE	AR		atypical hemolytic-uremic syndrome with DGKE deficiency; membranoproliferative glomerulonephritis
+DGUOK	AR		mitochondrial disease
+DHCR24	AR		desmosterolosis
+DHCR7	AR		Smith-Lemli-Opitz syndrome
+DHDDS	AR		DHDDS-CDG
+DHODH	AR		postaxial acrofacial dysostosis
+DHTKD1	AR		2-aminoadipic 2-oxoadipic aciduria
+DIAPH1	AR	yes	progressive microcephaly-seizures-cortical blindness-developmental delay syndrome
+DIS3L2	AR		Perlman syndrome
+DKC1	XL		DKC1-related disorder; dyskeratosis congenita, X-linked
+DLAT	AR		Leigh syndrome
+DLD	AR		Leigh syndrome; pyruvate dehydrogenase E3 deficiency
+DLG3	XL		non-syndromic X-linked intellectual disability
+DMD	XL		progressive muscular dystrophy
+DNAAF1	AR		primary ciliary dyskinesia 13
+DNAAF11	AR		primary ciliary dyskinesia 19
+DNAAF19	AR		primary ciliary dyskinesia 17
+DNAAF2	AR		primary ciliary dyskinesia 10
+DNAAF3	AR		primary ciliary dyskinesia 2
+DNAAF4	AR		primary ciliary dyskinesia 25
+DNAAF5	AR		primary ciliary dyskinesia 18
+DNAAF6	XL		ciliary dyskinesia, primary, 36, X-linked
+DNAH1	AR		spermatogenic failure 18
+DNAH10	AR		spermatogenic failure 56
+DNAH11	AR		primary ciliary dyskinesia 7
+DNAH12	AR		spermatogenic failure
+DNAH17	AR		spermatogenic failure 39
+DNAH5	AR		primary ciliary dyskinesia 3
+DNAH6	AR		spermatogenic failure
+DNAH8	AR		spermatogenic failure 46
+DNAH9	AR		ciliary dyskinesia, primary, 40
+DNAI1	AR		primary ciliary dyskinesia 1
+DNAI2	AR		primary ciliary dyskinesia 9
+DNAJB13	AR		primary ciliary dyskinesia 34
+DNAJB2	AR		neuronopathy, distal hereditary motor, autosomal recessive 5
+DNAJC12	AR		hyperphenylalaninemia due to DNAJC12 deficiency
+DNAJC19	AR		3-methylglutaconic aciduria type 5
+DNAJC21	AR		bone marrow failure syndrome 3
+DNAJC30	AR		Leber-like hereditary optic neuropathy, autosomal recessive 1
+DNAL1	AR		primary ciliary dyskinesia 16
+DNASE1L3	AR		autosomal systemic lupus erythematosus type 16
+DNM1	AR	yes	genetic developmental and epileptic encephalopathy
+DNMT3B	AR		immunodeficiency-centromeric instability-facial anomalies syndrome 1
+DOCK11	XL		autoinflammatory disease, multisystem, with immune dysregulation, X-linked
+DOCK2	AR		DOCK2 deficiency
+DOCK6	AR		Adams-Oliver syndrome
+DOCK7	AR		genetic developmental and epileptic encephalopathy
+DOCK8	AR		combined immunodeficiency due to DOCK8 deficiency
+DOK7	AR		congenital myasthenic syndrome 10
+DOLK	AR		DK1-congenital disorder of glycosylation
+DPAGT1	AR		DPAGT1-congenital disorder of glycosylation
+DPH1	AR		developmental delay with short stature, dysmorphic facial features, and sparse hair
+DPM1	AR		congenital disorder of glycosylation type 1E
+DPM2	AR		congenital muscular dystrophy with intellectual disability and severe epilepsy
+DPM3	AR		DPM3-congenital disorder of glycosylation
+DPY19L2	AR		male infertility due to globozoospermia
+DRC1	AR		primary ciliary dyskinesia 21
+DRC2	AR		primary ciliary dyskinesia 27
+DRC4	AR		primary ciliary dyskinesia 33
+DSE	AR		Ehlers-Danlos syndrome, musculocontractural type 2
+DST	AR		hereditary sensory and autonomic neuropathy type 6
+DSTYK	AR		complex hereditary spastic paraplegia
+DTNBP1	AR		Hermansky-Pudlak syndrome 7
+DYNC2H1	AR		asphyxiating thoracic dystrophy 3
+DYNC2I1	AR		short-rib thoracic dysplasia 8 with or without polydactyly
+DYNC2I2	AR		short-rib thoracic dysplasia 11 with or without polydactyly
+DYSF	AR		autosomal recessive limb-girdle muscular dystrophy
+DZIP1L	AR		autosomal recessive polycystic kidney disease
+EARS2	AR		Leigh syndrome; mitochondrial disease
+EBP	XL		MEND syndrome
+ECHS1	AR		Leigh syndrome; mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency
+EDAR	AR		ectodermal dysplasia 10B, hypohidrotic/hair/tooth type, autosomal recessive
+EDEM3	AR		congenital disorder of glycosylation, type 2v
+EDN3	AR		Waardenburg syndrome type 4B
+EDNRB	AR		Waardenburg syndrome type 4A
+EFEMP2	AR		cutis laxa, autosomal recessive, type 1B
+EFL1	AR		Shwachman-Diamond syndrome 2
+EFNB1	XL		craniofrontonasal syndrome
+EIF2AK4	AR		pulmonary veno-occlusive disease and/or pulmonary capillary haemangiomatosis
+EIF2B1	AR		leukoencephalopathy with vanishing white matter 1
+EIF2B2	AR		leukoencephalopathy with vanishing white matter 2
+EIF2B3	AR		leukoencephalopathy with vanishing white matter 3
+EIF2B4	AR		leukoencephalopathy with vanishing white matter 4
+EIF2B5	AR		leukoencephalopathy with vanishing white matter 5
+EIF2S3	XL		MEHMO syndrome
+EIF3F	AR		syndromic intellectual disability
+ELAC2	AR		mitochondrial disease
+ELF4	XL		autoinflammatory syndrome, familial, X-linked, Behcet-like 2
+ELP1	AR		Riley-Day syndrome
+ELP2	AR		complex neurodevelopmental disorder with motor features
+EMC1	AR	yes	complex neurodevelopmental disorder with motor features
+EMG1	AR		Bowen-Conradi syndrome
+EMILIN1	AR		arterial tortuosity-bone fragility syndrome
+EML1	AR		band heterotopia of brain
+ENPP1	AR		arterial calcification, generalized, of infancy, 1
+ENTPD1	AR		complex hereditary spastic paraplegia
+EOGT	AR		Adams-Oliver syndrome 4
+EPG5	AR		Vici syndrome
+EPM2A	AR		Lafora disease
+EPRS1	AR		leukodystrophy, hypomyelinating, 15
+EPS8	AR		autosomal recessive nonsyndromic hearing loss 102
+EPS8L2	AR		nonsyndromic genetic hearing loss
+ERCC2	AR		xeroderma pigmentosum group D
+ERCC3	AR		xeroderma pigmentosum group B
+ERCC4	AR		xeroderma pigmentosum group F
+ERCC5	AR		xeroderma pigmentosum group G
+ERCC6	AR		Cockayne spectrum with or without cerebrooculofacioskeletal syndrome
+ERCC6L2	AR		bone marrow failure syndrome
+ERCC8	AR		Cockayne syndrome type 1
+ERLIN1	AR		hereditary spastic paraplegia 62
+ERLIN2	AR		hereditary spastic paraplegia 18
+ESCO2	AR		Roberts-SC phocomelia syndrome
+ESPN	AR		nonsyndromic genetic hearing loss
+ESRRB	AR		nonsyndromic genetic hearing loss
+ETFA	AR		multiple acyl-CoA dehydrogenase deficiency
+ETFB	AR		multiple acyl-CoA dehydrogenase deficiency
+ETFDH	AR		multiple acyl-CoA dehydrogenase deficiency
+ETHE1	AR		Leigh syndrome
+EVC	AR		Ellis-van Creveld syndrome
+EVC2	AR	yes	Ellis-van Creveld syndrome
+EXOC6B	AR		spondyloepimetaphyseal dysplasia with joint laxity, type 3
+EXOC7	AR		neurodevelopmental disorder with seizures and brain atrophy
+EXTL3	AR		immunoskeletal dysplasia with neurodevelopmental abnormalities
+EYS	AR		EYS-related retinopathy
+F10	AR		congenital factor X deficiency
+F12	AR	yes	congenital factor XII deficiency
+F13A1	AR		factor XIII, A subunit, deficiency of
+F13B	AR		factor XIII, b subunit, deficiency of
+F2	AR	yes	congenital prothrombin deficiency
+F5	AR	yes	congenital factor V deficiency
+F7	AR		factor VII deficiency
+F8	XL		hemophilia A
+F9	XL		hemophilia B
+FA2H	AR		hereditary spastic paraplegia 35
+FADD	AR		FADD-related immunodeficiency
+FAH	AR		tyrosinemia type I
+FAM149B1	AR		Joubert syndrome 36
+FAM20C	AR		lethal osteosclerotic bone dysplasia
+FAN1	AR		karyomegalic interstitial nephritis
+FANCA	AR		Fanconi anemia complementation group A
+FANCB	XL		Fanconi anemia complementation group B
+FANCC	AR		Fanconi anemia complementation group C
+FANCD2	AR		Fanconi anemia complementation group D2
+FANCE	AR		Fanconi anemia complementation group E
+FANCF	AR		Fanconi anemia complementation group F
+FANCG	AR		Fanconi anemia complementation group G
+FANCI	AR		Fanconi anemia complementation group I
+FANCL	AR		Fanconi anemia complementation group L
+FANCM	AR		FANCM Fanconi-like genomic instability disorder
+FAR1	AR	yes	fatty acyl-CoA reductase 1 deficiency
+FARS2	AR		Leigh syndrome; mitochondrial disease
+FASLG	AR		autoimmune lymphoproliferative syndrome type 1
+FASTKD2	AR		mitochondrial disease
+FAT1	AR		focal segmental glomerulosclerosis
+FAT4	AR		FAT4-related neurodevelopmental disorder
+FBP1	AR		fructose-1,6-bisphosphatase deficiency
+FBXL4	AR		Leigh syndrome; mitochondrial disease
+FCHO1	AR		immunodeficiency 76
+FDXR	AR		FDXR-related optic atrophy mitochondrial dysfunction syndrome
+FECH	AR		protoporphyria, erythropoietic, 1
+FERMT1	AR		Kindler syndrome
+FERMT3	AR		leukocyte adhesion deficiency 3
+FGD1	XL		Aarskog-Scott syndrome, X-linked
+FGD4	AR		Charcot-Marie-Tooth disease
+FGF3	AR		deafness with labyrinthine aplasia, microtia, and microdontia
+FIG4	AR		Charcot-Marie-Tooth disease
+FITM2	AR		Siddiqi syndrome
+FKRP	AR		myopathy caused by variation in FKRP
+FKTN	AR		myopathy caused by variation in FKTN
+FLAD1	AR		myopathy with abnormal lipid metabolism
+FLII	AR		cardiomyopathy, dilated, 2j
+FLNA	XL		periventricular nodular heterotopia
+FLVCR1	AR		FLVCR1-related retinopathy with or without ataxia
+FLVCR2	AR		proliferative vasculopathy and hydranencephaly-hydrocephaly syndrome
+FMO3	AR		trimethylaminuria
+FMR1	XL		fragile X syndrome
+FNIP1	AR		FNIP1-associated syndrome
+FOLR1	AR		neurodegenerative syndrome due to cerebral folate transport deficiency
+FOXE1	AR		Bamforth-Lazarus syndrome
+FOXP3	XL		immune dysregulation-polyendocrinopathy-enteropathy-X-linked syndrome
+FOXRED1	AR		Leigh syndrome; mitochondrial disease
+FRAS1	AR		Fraser syndrome
+FRMPD4	XL		X-linked complex neurodevelopmental disorder
+FRRS1L	AR		genetic developmental and epileptic encephalopathy
+FTSJ1	XL		X-linked complex neurodevelopmental disorder
+FUCA1	AR		fucosidosis
+FUT8	AR		congenital disorder of glycosylation with defective fucosylation 1
+FXN	AR		Friedreich ataxia
+FYB1	AR		thrombocytopenia 3
+G6PC1	AR		glycogen storage disease I
+G6PC3	AR		autosomal recessive severe congenital neutropenia due to G6PC3 deficiency
+G6PD	XL		G6PD deficiency; anemia, nonspherocytic hemolytic, due to G6PD deficiency
+GAA	AR		glycogen storage disease II
+GAD1	AR		obsolete early infantile epileptic encephalopathy
+GALC	AR		Krabbe disease
+GALE	AR		galactose epimerase deficiency
+GALK1	AR		galactokinase deficiency
+GALM	AR		galactosemia 4
+GALNS	AR		mucopolysaccharidosis type 4A
+GALNT2	AR		congenital disorder of glycosylation, type iit
+GALNT3	AR		tumoral calcinosis, hyperphosphatemic, familial, 1
+GAMT	AR		guanidinoacetate methyltransferase deficiency
+GAN	AR		giant axonal neuropathy 1
+GAS2L2	AR		ciliary dyskinesia, primary, 41
+GATA1	XL		GATA1-related cytopenia
+GATM	AR	yes	AGAT deficiency
+GBA1	AR	yes	Gaucher disease
+GBA2	AR		complex hereditary spastic paraplegia
+GBE1	AR		glycogen storage disease due to glycogen branching enzyme deficiency
+GCDH	AR		glutaryl-CoA dehydrogenase deficiency
+GCSH	AR		multiple mitochondrial dysfunctions syndrome 7
+GDAP2	AR		spinocerebellar ataxia, autosomal recessive 27
+GDI1	XL		non-syndromic X-linked intellectual disability
+GEMIN5	AR		neurodevelopmental disorder with cerebellar atrophy and motor dysfunction
+GFER	AR		mitochondrial disease
+GFM1	AR		Leigh syndrome
+GFM2	AR		Leigh syndrome
+GFPT1	AR		congenital myasthenic syndrome 12
+GGCX	AR	yes	vitamin K-dependent clotting factors, combined deficiency of, type 1
+GINS1	AR		combined immunodeficiency due to GINS1 deficiency
+GINS4	AR		combined immunodeficiency
+GIPC3	AR		nonsyndromic genetic hearing loss
+GJB1	XL		Charcot-Marie-Tooth disease X-linked dominant 1
+GJB2	AR	yes	nonsyndromic genetic hearing loss
+GJC2	AR		hypomyelinating leukodystrophy 2
+GK	XL		inborn glycerol kinase deficiency
+GLA	XL		Fabry disease
+GLB1	AR		GM1 gangliosidosis; mucopolysaccharidosis type 4B
+GLDC	AR		glycine encephalopathy
+GLDN	AR		lethal congenital contracture syndrome 11
+GLIS2	AR		nephronophthisis 7
+GLS	AR		glutaminase deficiency
+GLUL	AR	yes	congenital brain dysgenesis due to glutamine synthetase deficiency
+GLYCTK	AR		D-glyceric aciduria
+GM2A	AR		Tay-Sachs disease AB variant
+GMPPA	AR		alacrima, achalasia, and impaired intellectual development syndrome
+GMPPB	AR		myopathy caused by variation in GMPPB
+GNAT1	AR	yes	inherited retinal dystrophy
+GNAT2	AR		GNAT2-related retinopathy
+GNE	AR		thrombocytopenia 12 with or without myopathy
+GNPAT	AR		rhizomelic chondrodysplasia punctata, type 2
+GNPTAB	AR		GNPTAB-mucolipidosis
+GNPTG	AR		GNPTG-mucolipidosis
+GNS	AR		mucopolysaccharidosis type 3D
+GORAB	AR		geroderma osteodysplastica
+GOSR2	AR		progressive myoclonus epilepsy
+GOT2	AR		mitochondrial disease
+GP1BA	AR	yes	Bernard-Soulier syndrome
+GP1BB	AR		Bernard-Soulier syndrome
+GP6	AR		platelet-type bleeding disorder 11
+GP9	AR		Bernard-Soulier syndrome
+GPAA1	AR		glycosylphosphatidylinositol biosynthesis defect 15
+GPC3	XL		Simpson-Golabi-Behmel syndrome
+GPHN	AR		sulfite oxidase deficiency due to molybdenum cofactor deficiency type C
+GPKOW	XL		holoprosencephaly-hypokinesia-congenital contractures syndrome
+GPR143	XL		GPR143-related foveal hypoplasia
+GPR179	AR		GPR179-related retinopathy
+GPSM2	AR		Chudley-McCullough syndrome
+GPT2	AR		glutamate pyruvate transaminase 2 deficiency
+GRIA3	XL		X-linked complex neurodevelopmental disorder
+GRIK2	AR	yes	complex neurodevelopmental disorder
+GRIN1	AR	yes	complex neurodevelopmental disorder
+GRIP1	AR		Fraser syndrome 3
+GRK1	AR		Oguchi disease
+GRM6	AR		GRM6-related retinopathy
+GRN	AR	yes	neuronal ceroid lipofuscinosis
+GRXCR1	AR		nonsyndromic genetic hearing loss
+GRXCR2	AR		nonsyndromic genetic hearing loss
+GSS	AR		inherited glutathione synthetase deficiency
+GSTZ1	AR		maleylacetoacetate isomerase deficiency
+GSX2	AR		diencephalic-mesencephalic junction dysplasia syndrome 2
+GTPBP2	AR		Jaberi-Elahi syndrome
+GTPBP3	AR		Leigh syndrome; mitochondrial disease
+GUCY2D	AR	yes	GUCY2D-related recessive retinopathy
+GUSB	AR		mucopolysaccharidosis type 7
+GYG1	AR		polyglucosan body myopathy type 2
+GYS1	AR		glycogen storage disease due to muscle and heart glycogen synthase deficiency
+GYS2	AR		glycogen storage disorder due to hepatic glycogen synthase deficiency
+HAAO	AR		vertebral, cardiac, renal, and limb defects syndrome 1
+HACD1	AR		congenital myopathy
+HADH	AR		obsolete hyperinsulinism due to short chain 3-hydroxylacyl-CoA dehydrogenase deficiency
+HADHA	AR		long chain 3-hydroxyacyl-CoA dehydrogenase deficiency
+HADHB	AR		mitochondrial trifunctional protein deficiency
+HAMP	AR		hemochromatosis type 2B
+HAVCR2	AR		HAVCR2-related cancer predisposition
+HBA1	AR	yes	HBA1-related alpha thalassemia spectrum
+HBA2	AR		HBA2-related alpha thalassemia spectrum
+HBB	AR	yes	beta-thalassemia HBB/LCRB; obsolete sickle cell disease and related diseases
+HCFC1	XL		X-linked intellectual disability
+HCN2	AR	yes	complex neurodevelopmental disorder
+HDAC8	XL		Cornelia de Lange syndrome
+HECW2	AR	yes	complex neurodevelopmental disorder
+HELLS	AR		immunodeficiency-centromeric instability-facial anomalies syndrome 4
+HEPACAM	AR	yes	megalencephalic leukoencephalopathy with subcortical cysts 2A
+HEXA	AR		Tay-Sachs disease
+HEXB	AR		Sandhoff disease
+HFE	AR		hemochromatosis type 1
+HGD	AR		alkaptonuria
+HGF	AR		nonsyndromic genetic hearing loss
+HGSNAT	AR		inherited retinal dystrophy; mucopolysaccharidosis type 3C
+HIBCH	AR		3-hydroxyisobutyryl-CoA hydrolase deficiency; Leigh syndrome
+HIKESHI	AR		hypomyelinating leukodystrophy 13
+HINT1	AR		Charcot-Marie-Tooth disease
+HJV	AR		hemochromatosis type 2A
+HLCS	AR		holocarboxylase synthetase deficiency
+HMGCL	AR		3-hydroxy-3-methylglutaric aciduria
+HMGCR	AR		autosomal recessive limb-girdle muscular dystrophy
+HMGCS2	AR		3-hydroxy-3-methylglutaryl-CoA synthase deficiency
+HMOX1	AR		heme oxygenase 1 deficiency
+HMX1	AR		oculoauricular syndrome
+HNRNPH2	XL		X-linked complex neurodevelopmental disorder
+HOGA1	AR		primary hyperoxaluria type 3
+HOXA1	AR		syndromic intellectual disability
+HPCA	AR		complex movement disorder with or without neurodevelopmental features
+HPD	AR		tyrosinemia type III
+HPDL	AR		Leigh syndrome
+HPRT1	XL		Lesch-Nyhan syndrome
+HPS1	AR		Hermansky-Pudlak syndrome 1
+HPS3	AR		Hermansky-Pudlak syndrome 3
+HPS4	AR		Hermansky-Pudlak syndrome 4
+HPS5	AR		Hermansky-Pudlak syndrome 5
+HPS6	AR		Hermansky-Pudlak syndrome 6
+HSD11B2	AR		apparent mineralocorticoid excess
+HSD17B10	XL		HSD10 mitochondrial disease
+HSD17B4	AR		Perrault syndrome; d-bifunctional protein deficiency
+HSD3B7	AR		congenital bile acid synthesis defect 1
+HSPG2	AR		Schwartz-Jampel syndrome type 1; Silverman-Handmaker type dyssegmental dysplasia
+HTRA2	AR		3-methylglutaconic aciduria type 8
+HUWE1	XL		non-syndromic X-linked intellectual disability
+HYAL1	AR		mucopolysaccharidosis type 9
+HYCC1	AR		hypomyelinating leukodystrophy 5
+HYDIN	AR		primary ciliary dyskinesia 5
+HYLS1	AR		hydrolethalus syndrome
+IARS2	AR		mitochondrial disease
+IBA57	AR		mitochondrial disease
+ICOS	AR		common variable immunodeficiency
+ICOSLG	AR		combined immunodeficiency
+IDH3B	AR		IDH3B-related retinopathy
+IDS	XL		mucopolysaccharidosis type 2
+IDUA	AR		mucopolysaccharidosis type 1
+IFNAR1	AR		immunodeficiency 106, susceptibility to viral infections
+IFNAR2	AR		immunodeficiency 45
+IFT122	AR		cranioectodermal dysplasia 1
+IFT140	AR	yes	IFT140-related recessive ciliopathy
+IFT172	AR		ciliopathy
+IFT27	AR		ciliopathy
+IFT43	AR		ciliopathy
+IFT52	AR		short-rib thoracic dysplasia 16 with or without polydactyly
+IFT57	AR		ciliopathy
+IFT74	AR		ciliopathy-IFT74
+IFT80	AR		asphyxiating thoracic dystrophy 2
+IFT81	AR		short-rib thoracic dysplasia 19 with or without polydactyly
+IGHM	AR		autosomal recessive agammaglobulinemia 1
+IGHMBP2	AR		hereditary peripheral neuropathy
+IGLL1	AR		agammaglobulinemia 2, autosomal recessive
+IKBKB	AR	yes	severe combined immunodeficiency due to IKK2 deficiency
+IKBKG	XL		IKBKG-related immunodeficiency with or without ectodermal dysplasia; incontinentia pigmenti
+IL10	AR		IL10-related early-onset inflammatory bowel disease
+IL10RA	AR		inflammatory bowel disease 28
+IL10RB	AR		inflammatory bowel disease 25
+IL11RA	AR		craniosynostosis and dental anomalies
+IL1RAPL1	XL		X-linked complex neurodevelopmental disorder
+IL21R	AR		immunodeficiency disease
+IL2RA	AR		immunodeficiency due to CD25 deficiency
+IL2RB	AR		immunodeficiency 63 with lymphoproliferation and autoimmunity
+IL2RG	XL		T-B+ severe combined immunodeficiency due to gamma chain deficiency
+IL7R	AR		immunodeficiency 104
+ILDR1	AR		nonsyndromic genetic hearing loss
+IMPG1	AR	yes	IMPG1-related recessive retinopathy
+IMPG2	AR		IMPG2-related recessive retinopathy
+INPP5E	AR		Joubert syndrome 1; MORM syndrome
+INPPL1	AR		opsismodysplasia
+INS	AR	yes	monogenic diabetes
+INSR	AR	yes	Donohue syndrome
+INTU	AR		INTU-related skeletal ciliopathy
+INVS	AR		nephronophthisis 2
+IQCB1	AR		ciliopathy
+IQSEC2	XL		X-linked complex neurodevelopmental disorder
+IRF9	AR		immunodeficiency 65, susceptibility to viral infections
+IRX5	AR		craniofacial dysplasia - osteopenia syndrome
+ISCA2	AR		mitochondrial disease
+ISCU	AR		mitochondrial disease
+ITCH	AR		syndromic multisystem autoimmune disease due to ITCH deficiency
+ITGA2B	AR	yes	Glanzmann thrombasthenia
+ITGA3	AR		epidermolysis bullosa, junctional 7, with interstitial lung disease and nephrotic syndrome
+ITGB3	AR	yes	Glanzmann thrombasthenia
+ITK	AR		lymphoproliferative syndrome 1
+ITPA	AR		genetic developmental and epileptic encephalopathy
+ITPR1	AR	yes	aniridia-cerebellar ataxia-intellectual disability syndrome
+IVD	AR		isovaleric acidemia
+JAG2	AR		autosomal recessive limb-girdle muscular dystrophy
+JAK3	AR		T-B+ severe combined immunodeficiency due to JAK3 deficiency
+JPH2	AR	yes	cardiomyopathy, dilated, 2E
+KATNIP	AR		ciliopathy
+KCNJ1	AR		Bartter disease type 2
+KCNJ10	AR		EAST syndrome
+KCNJ11	AR	yes	hyperinsulinemic hypoglycemia, familial, 2
+KCNJ13	AR	yes	inherited retinal dystrophy
+KCNJ16	AR		hypokalemic alkalosis, familial, with specific renal tubulopathy
+KCNMA1	AR	yes	generalized epilepsy-paroxysmal dyskinesia syndrome
+KCNQ1	AR	yes	Jervell and Lange-Nielsen syndrome
+KCNV2	AR		inherited retinal dystrophy
+KCTD7	AR		progressive myoclonus epilepsy
+KDM5B	AR		intellectual disability
+KDM5C	XL		X-linked complex neurodevelopmental disorder
+KDM6A	XL		Kabuki syndrome 2
+KDSR	AR		erythrokeratodermia variabilis et progressiva 4
+KIAA1549	AR		retinitis pigmentosa 86
+KIDINS220	AR	yes	ventriculomegaly and arthrogryposis
+KIF26A	AR		complex cortical dysplasia with other brain malformations
+KIFBP	AR		Goldberg-Shprintzen syndrome
+KIZ	AR		KIZ-related retinopathy
+KLHL24	AR		hypertrophic cardiomyopathy
+KLHL40	AR		nemaline myopathy 8
+KLHL41	AR		nemaline myopathy 9
+KLKB1	AR		inherited prekallikrein deficiency
+KNG1	AR		congenital high-molecular-weight kininogen deficiency
+KPTN	AR		complex neurodevelopmental disorder
+KYNU	AR		vertebral, cardiac, renal, and limb defects syndrome 2
+L1CAM	XL		L1 syndrome
+L2HGDH	AR		mitochondrial disease
+LAMA2	AR		LAMA2-related muscular dystrophy
+LAMA5	AR		LAMA5-related multisystemic syndrome
+LAMB1	AR		cobblestone lissencephaly without muscular or ocular involvement
+LAMP2	XL		Danon disease
+LAMP3	AR		inherited interstitial lung disease
+LARGE1	AR		muscular dystrophy-dystroglycanopathy
+LARS2	AR		Perrault syndrome
+LAT	AR		severe combined immunodeficiency due to LAT deficiency
+LBR	AR		Greenberg dysplasia; regressive spondylometaphyseal dysplasia
+LCA5	AR		LCA5-related retinopathy
+LCK	AR		severe combined immunodeficiency due to LCK deficiency
+LCP2	AR		immunodeficiency 81
+LDB3	AR		cardiomyopathy, dilated, 2l
+LDLRAP1	AR		hypercholesterolemia, familial, 4
+LHFPL5	AR		nonsyndromic genetic hearing loss
+LIAS	AR		mitochondrial disease
+LIFR	AR		obsolete Stüve-Wiedemann syndrome
+LIG1	AR		immunodeficiency 96
+LIG3	AR		mitochondrial disease
+LIG4	AR		DNA ligase IV deficiency
+LINS1	AR		complex neurodevelopmental disorder
+LIPA	AR		lysosomal acid lipase deficiency
+LIPE	AR		LIPE-related familial partial lipodystrophy
+LIPT1	AR		Leigh syndrome
+LMAN1	AR		factor V and factor VIII, combined deficiency of, type 1
+LMBRD1	AR		methylmalonic aciduria and homocystinuria type cblF
+LMOD2	AR		cardiomyopathy, dilated, 2G
+LMOD3	AR		nemaline myopathy 10
+LOXHD1	AR		nonsyndromic genetic hearing loss
+LPIN1	AR		myoglobinuria, acute recurrent, autosomal recessive
+LPIN2	AR		Majeed syndrome
+LRAT	AR		inherited retinal dystrophy
+LRBA	AR		combined immunodeficiency due to LRBA deficiency
+LRP4	AR		Cenani-Lenz syndactyly syndrome
+LRP5	AR		LRP5-related exudative vitreoretinopathy
+LRPPRC	AR		Leigh syndrome; mitochondrial disease
+LRRC56	AR		ciliary dyskinesia, primary, 39
+LRTOMT	AR		autosomal recessive nonsyndromic hearing loss 63
+LTBP2	AR		glaucoma 3, primary congenital, D
+LYRM7	AR		mitochondrial disease
+LYST	AR		Chediak-Higashi syndrome
+LZTFL1	AR		LZTFL1-related ciliopathy
+LZTR1	AR	yes	Noonan syndrome
+MAB21L1	AR		cerebellar, ocular, craniofacial, and genital syndrome
+MAG	AR		complex hereditary spastic paraplegia
+MAGED2	XL		Bartter disease type 5
+MAGT1	XL		X-linked immunodeficiency with magnesium defect, Epstein-Barr virus infection and neoplasia
+MAK	AR		MAK-related retinopathy
+MALT1	AR		combined immunodeficiency due to MALT1 deficiency
+MAN1B1	AR		MAN1B1-congenital disorder of glycosylation
+MAN2B1	AR		alpha-mannosidosis
+MAN2C1	AR		congenital disorder of deglycosylation 2
+MANBA	AR		beta-mannosidosis
+MAOA	XL		Brunner syndrome
+MAP3K14	AR		NIK deficiency
+MAP3K20	AR		myopathy, centronuclear, 6, with fiber-type disproportion
+MAPKBP1	AR		nephronophthisis 20
+MARS1	AR		severe early-onset pulmonary alveolar proteinosis due to MARS deficiency
+MARS2	AR		mitochondrial disease
+MARVELD2	AR		nonsyndromic genetic hearing loss
+MASP1	AR		3MC syndrome 1
+MAT1A	AR		methionine adenosyltransferase deficiency
+MBD4	AR	yes	tumor predisposition syndrome 2
+MBOAT7	AR		complex neurodevelopmental disorder
+MBTPS1	AR		spondyloepiphyseal dysplasia, kondo-fu type
+MBTPS2	XL		IFAP syndrome 1, with or without BRESHECK syndrome
+MCCC1	AR		3-methylcrotonyl-CoA carboxylase deficiency
+MCCC2	AR		3-methylcrotonyl-CoA carboxylase deficiency
+MCEE	AR		methylmalonic acidemia due to methylmalonyl-CoA epimerase deficiency
+MCFD2	AR		factor 5 and Factor VIII, combined deficiency of, 2
+MCIDAS	AR		ciliary dyskinesia, primary, 42
+MCM10	AR		immunodeficiency 80 with or without congenital cardiomyopathy
+MCM3AP	AR		peripheral neuropathy, autosomal recessive, with or without impaired intellectual development
+MCM4	AR		primary immunodeficiency with natural-killer cell deficiency and adrenal insufficiency
+MCM9	AR		MCM9-related gametogenic failure
+MCOLN1	AR		mucolipidosis type IV
+MCPH1	AR		microcephaly with intellectual disability
+MECP2	XL		Rett syndrome
+MECR	AR		Leigh syndrome
+MED12	XL		MED12-related intellectual disability syndrome
+MED23	AR		syndromic intellectual disability
+MED27	AR		neurodevelopmental disorder with spasticity, cataracts, and cerebellar hypoplasia
+MEGF10	AR		MEGF10-related myopathy
+MEGF8	AR		MEGF8-related Carpenter syndrome
+MERTK	AR		MERTK-related retinopathy
+METTL23	AR		intellectual disability
+MFF	AR		Leigh syndrome; encephalopathy due to mitochondrial and peroxisomal fission defect
+MFN2	AR	yes	multiple symmetric lipomatosis with partial lipodystrophy
+MFSD8	AR		neuronal ceroid lipofuscinosis
+MGAT2	AR		MGAT2-congenital disorder of glycosylation
+MGME1	AR		mitochondrial disease
+MGP	AR		Keutel syndrome
+MICOS13	AR		mitochondrial disease
+MICU1	AR		mitochondrial disease
+MID1	XL		X-linked Opitz G/BBB syndrome
+MINAR2	AR		hearing loss, autosomal recessive 120
+MINPP1	AR		pontocerebellar hypoplasia
+MIPEP	AR		mitochondrial disease
+MKKS	AR		MKKS-related ciliopathy
+MKS1	AR		ciliopathy
+MLC1	AR		megalencephalic leukoencephalopathy with subcortical cysts 1
+MLH1	AR	yes	mismatch repair cancer syndrome 1
+MLYCD	AR		malonic aciduria
+MMAA	AR		methylmalonic aciduria, cblA type
+MMAB	AR		methylmalonic aciduria, cblB type
+MMACHC	AR		methylmalonic aciduria and homocystinuria type cblC
+MMADHC	AR		inborn disorder of cobalamin metabolism and transport
+MME	AR		Charcot-Marie-Tooth disease type 2T
+MMUT	AR		methylmalonic aciduria due to methylmalonyl-CoA mutase deficiency
+MOCOS	AR		xanthinuria type II
+MOCS1	AR		sulfite oxidase deficiency due to molybdenum cofactor deficiency type A
+MOCS2	AR		sulfite oxidase deficiency due to molybdenum cofactor deficiency type B1
+MOGS	AR		MOGS-congenital disorder of glycosylation
+MPC1	AR		mitochondrial disease
+MPDU1	AR		MPDU1-congenital disorder of glycosylation
+MPI	AR		MPI-congenital disorder of glycosylation
+MPIG6B	AR		thrombocytopenia, anemia, and myelofibrosis
+MPL	AR	yes	congenital amegakaryocytic thrombocytopenia 1
+MPV17	AR		mitochondrial disease
+MPZL2	AR		nonsyndromic genetic hearing loss
+MRPL3	AR		mitochondrial disease
+MRPL39	AR		mitochondrial disease
+MRPL44	AR		mitochondrial disease
+MRPS2	AR		mitochondrial disease
+MRPS22	AR		mitochondrial disease
+MRPS34	AR		Leigh syndrome
+MSH2	AR	yes	mismatch repair cancer syndrome 1
+MSH3	AR		familial adenomatous polyposis 4
+MSH6	AR	yes	mismatch repair cancer syndrome 1
+MSL3	XL		Basilicata-Akhtar syndrome
+MSN	XL		combined immunodeficiency due to moesin deficiency
+MSRB3	AR		nonsyndromic genetic hearing loss
+MSTO1	AR		mitochondrial disease
+MTFMT	AR		Leigh syndrome
+MTHFD1	AR		combined immunodeficiency and megaloblastic anemia with or without hyperhomocysteinemia
+MTHFR	AR		homocystinuria due to methylene tetrahydrofolate reductase deficiency
+MTM1	XL		X-linked myotubular myopathy
+MTMR2	AR		demyelinating hereditary motor and sensory neuropathy
+MTO1	AR		mitochondrial disease
+MTPAP	AR		mitochondrial disease
+MTR	AR		methylcobalamin deficiency type cblG
+MTRFR	AR		Leigh syndrome; mitochondrial disease
+MTRR	AR		methylcobalamin deficiency type cblE
+MTX2	AR		mandibuloacral dysplasia progeroid syndrome
+MUSK	AR		congenital myasthenic syndrome 9
+MUTYH	AR		familial adenomatous polyposis 2
+MVK	AR		mevalonate kinase deficiency
+MYH2	AR	yes	myopathy, proximal, and ophthalmoplegia
+MYMK	AR		obsolete Carey-Fineman-Ziter syndrome
+MYO15A	AR		nonsyndromic genetic hearing loss
+MYO18B	AR		Klippel-Feil anomaly-myopathy-facial dysmorphism syndrome
+MYO3A	AR		nonsyndromic genetic hearing loss
+MYO5A	AR		Griscelli syndrome type 1
+MYO7A	AR	yes	Usher syndrome type 1
+MYPN	AR		MYPN-related myopathy
+MYSM1	AR		bone marrow failure syndrome 4
+MYZAP	AR		cardiomyopathy, dilated, 2K
+NAA10	XL		NAA10-related syndrome
+NAA20	AR		syndromic intellectual disability
+NADK2	AR		progressive encephalopathy with leukodystrophy due to DECR deficiency
+NADSYN1	AR		vertebral, cardiac, renal, and limb defects syndrome 3
+NAGA	AR		alpha-N-acetylgalactosaminidase deficiency
+NAGLU	AR		mucopolysaccharidosis type 3B
+NAGS	AR		hyperammonemia due to N-acetylglutamate synthase deficiency
+NANS	AR		spondyloepimetaphyseal dysplasia, Genevieve type
+NARS1	AR	yes	neurodevelopmental disorder with microcephaly, impaired language, and gait abnormalities
+NARS2	AR		mitochondrial disease
+NAXD	AR		mitochondrial disease
+NAXE	AR		mitochondrial disease
+NBEAL2	AR		gray platelet syndrome
+NBN	AR		Nijmegen breakage syndrome
+NCKAP1L	AR		immunodeficiency 72 with autoinflammation
+NDE1	AR		microcephaly with lissencephaly and/or hydranencephaly
+NDP	XL		Norrie disease
+NDUFA1	XL		Leigh syndrome; mitochondrial disease
+NDUFA10	AR		mitochondrial disease
+NDUFA12	AR		mitochondrial disease
+NDUFA13	AR		Leigh syndrome; mitochondrial disease
+NDUFA2	AR		Leigh syndrome; mitochondrial disease
+NDUFA6	AR		mitochondrial disease
+NDUFA8	AR		mitochondrial disease
+NDUFA9	AR		Leigh syndrome; mitochondrial disease
+NDUFAF1	AR		mitochondrial disease
+NDUFAF2	AR		Leigh syndrome; mitochondrial disease
+NDUFAF3	AR		mitochondrial disease
+NDUFAF4	AR		mitochondrial disease
+NDUFAF5	AR		Leigh syndrome; mitochondrial disease
+NDUFAF6	AR		Leigh syndrome; mitochondrial disease
+NDUFAF8	AR		Leigh syndrome; mitochondrial disease
+NDUFB10	AR		mitochondrial disease
+NDUFB11	XL		mitochondrial disease
+NDUFB3	AR		mitochondrial disease
+NDUFB8	AR		Leigh syndrome; mitochondrial disease
+NDUFC2	AR		Leigh syndrome; mitochondrial disease
+NDUFS1	AR		Leigh syndrome; mitochondrial disease
+NDUFS2	AR		Leigh syndrome; mitochondrial disease
+NDUFS3	AR		Leigh syndrome; mitochondrial disease
+NDUFS4	AR		Leigh syndrome; mitochondrial disease
+NDUFS6	AR		mitochondrial disease
+NDUFS7	AR		Leigh syndrome; mitochondrial disease
+NDUFS8	AR		Leigh syndrome; mitochondrial disease
+NDUFV1	AR		Leigh syndrome; mitochondrial disease
+NDUFV2	AR		mitochondrial disease
+NEB	AR	yes	nemaline myopathy 2
+NECAP1	AR		genetic developmental and epileptic encephalopathy
+NECTIN1	AR		cleft lip/palate-ectodermal dysplasia syndrome
+NEFL	AR	yes	Charcot-Marie-Tooth disease type 2
+NEK10	AR		ciliary dyskinesia, primary, 44
+NEK8	AR	yes	renal-hepatic-pancreatic dysplasia 2
+NEMF	AR		intellectual developmental disorder with speech delay and axonal peripheral neuropathy
+NEU1	AR		sialidosis
+NEUROD1	AR	yes	monogenic diabetes
+NEXMIF	XL		X-linked complex neurodevelopmental disorder
+NFU1	AR		mitochondrial disease
+NGF	AR		hereditary sensory and autonomic neuropathy
+NGLY1	AR		congenital disorder of deglycosylation 1
+NHEJ1	AR		Cernunnos-XLF deficiency
+NHLRC1	AR		Lafora disease
+NHS	XL		Nance-Horan syndrome
+NLGN3	XL		X-linked complex neurodevelopmental disorder
+NLGN4X	XL		X-linked complex neurodevelopmental disorder
+NME5	AR		ciliary dyskinesia, primary, 48, without situs inversus
+NMNAT1	AR		NMNAT1-related retinopathy
+NNT	AR		mitochondrial disease
+NONO	XL		X-linked syndromic intellectual disability
+NOTCH3	AR	yes	cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 1
+NPC1	AR		Niemann-Pick disease, type C1
+NPC2	AR		Niemann-Pick disease, type C2
+NPHP1	AR		nephronophthisis 1
+NPHP3	AR		nephronophthisis
+NPHP4	AR		nephronophthisis 4
+NPHS1	AR		congenital nephrotic syndrome, Finnish type
+NR2E3	AR	yes	enhanced S-cone syndrome
+NRAP	AR		dilated cardiomyopathy
+NRROS	AR		seizures, early-onset, with neurodegeneration and brain calcifications
+NSDHL	XL		CK syndrome
+NSMCE2	AR		Seckel syndrome 10
+NSRP1	AR		neurodevelopmental disorder with spasticity, seizures, and brain abnormalities
+NSUN2	AR		syndromic intellectual disability
+NT5C2	AR		complex hereditary spastic paraplegia
+NTHL1	AR		NTHL1-deficiency tumor predisposition syndrome
+NTRK1	AR		hereditary sensory and autonomic neuropathy type 4
+NUBPL	AR		Leigh syndrome; mitochondrial disease
+NUP133	AR		nephrotic syndrome, type 18
+NUP160	AR		nephrotic syndrome, type 19
+NUP188	AR		sandestig-stefanova syndrome
+NUP93	AR		nephrotic syndrome, type 12
+NYX	XL		NYX-related retinopathy
+OAT	AR		ornithine aminotransferase deficiency
+OCA2	AR		oculocutaneous albinism type 2
+OCRL	XL		oculocerebrorenal syndrome
+ODAD1	AR		primary ciliary dyskinesia 20
+ODAD2	AR		primary ciliary dyskinesia 23
+ODAD3	AR		primary ciliary dyskinesia 30
+ODAD4	AR		primary ciliary dyskinesia 35
+OFD1	XL		OFD1-related ciliopathy
+OGDH	AR		mitochondrial disease
+OGT	XL		intellectual disability, X-linked 106
+OPA1	AR	yes	Leigh syndrome
+OPHN1	XL		intellectual developmental disorder, X-linked, syndromic, Billuart type
+OPN1LW	XL		red color blindness
+OPN1MW	XL		red-green color blindness
+ORC4	AR		Meier-Gorlin syndrome 2
+ORC6	AR		Meier-Gorlin syndrome 3
+OSTM1	AR		autosomal recessive osteopetrosis 5
+OTC	XL		ornithine carbamoyltransferase deficiency
+OTOA	AR		nonsyndromic genetic hearing loss
+OTOF	AR		nonsyndromic genetic hearing loss
+OTOG	AR		nonsyndromic genetic hearing loss
+OTOGL	AR		nonsyndromic genetic hearing loss
+OTUD5	XL		multiple congenital anomalies-neurodevelopmental syndrome, X-linked
+OTUD6B	AR		syndromic intellectual disability
+OTULIN	AR		autoinflammation, panniculitis, and dermatosis syndrome, autosomal recessive
+OXCT1	AR		mitochondrial disease
+P2RY12	AR	yes	platelet-type bleeding disorder 8
+PAH	AR		phenylketonuria
+PAK3	XL		X-linked complex neurodevelopmental disorder
+PALB2	AR	yes	Fanconi anemia complementation group N
+PAN2	AR		syndromic complex neurodevelopmental disorder
+PARK7	AR		Parkinson disease
+PARS2	AR		mitochondrial disease
+PAX1	AR		otofaciocervical syndrome 2
+PAX5	AR	yes	PAX5-related B lymphopenia and autism spectrum disorder
+PAX7	AR		congenital myopathy with myasthenic-like onset
+PC	AR		pyruvate carboxylase deficiency disease
+PCARE	AR		PCARE-related retinopathy
+PCBD1	AR		pterin-4 alpha-carbinolamine dehydratase 1 deficiency
+PCCA	AR		propionic acidemia
+PCCB	AR		propionic acidemia
+PCDH19	XL		X-linked complex neurodevelopmental disorder
+PCK1	AR		phosphoenolpyruvate carboxykinase deficiency, cytosolic
+PCNT	AR		microcephalic osteodysplastic primordial dwarfism type II
+PCYT1A	AR		spondylometaphyseal dysplasia-cone-rod dystrophy syndrome
+PDE6A	AR		PDE6A-related retinopathy
+PDE6B	AR		inherited retinal dystrophy
+PDE6C	AR		PDE6C-related retinopathy
+PDE6D	AR		ciliopathy
+PDE6G	AR		PDE6G-related retinopathy
+PDHA1	XL		Leigh syndrome; mitochondrial disease
+PDHB	AR		Leigh syndrome
+PDHX	AR		Leigh syndrome; mitochondrial disease
+PDK3	XL		Charcot-Marie-Tooth disease X-linked dominant 6
+PDSS1	AR		mitochondrial disease
+PDSS2	AR		Leigh syndrome
+PDX1	AR	yes	pancreatic agenesis 1
+PDZD7	AR		hearing loss, autosomal recessive
+PEPD	AR		prolidase deficiency
+PET100	AR		Leigh syndrome; mitochondrial disease
+PEX1	AR		peroxisome biogenesis disorder due to PEX1 defect
+PEX10	AR		peroxisome biogenesis disorder
+PEX11B	AR		peroxisome biogenesis disorder
+PEX12	AR		peroxisome biogenesis disorder
+PEX13	AR		peroxisome biogenesis disorder
+PEX14	AR		peroxisome biogenesis disorder
+PEX16	AR		peroxisome biogenesis disorder
+PEX19	AR		peroxisome biogenesis disorder
+PEX2	AR		peroxisome biogenesis disorder
+PEX26	AR		peroxisome biogenesis disorder
+PEX3	AR		peroxisome biogenesis disorder
+PEX5	AR		peroxisome biogenesis disorder
+PEX6	AR		peroxisome biogenesis disorder
+PEX7	AR		peroxisome biogenesis disorder
+PGAP3	AR		hyperphosphatasia with impaired intellectual development syndrome 4
+PGM1	AR		PGM1-congenital disorder of glycosylation
+PGM3	AR		immunodeficiency 23
+PHEX	XL		X-linked dominant hypophosphatemic rickets
+PHF6	XL		Borjeson-Forssman-Lehmann syndrome
+PHF8	XL		syndromic X-linked intellectual disability Siderius type
+PHGDH	AR		neurometabolic disorder due to serine deficiency
+PHKA1	XL		glycogen storage disease IXd
+PHKB	AR		glycogen storage disease IXb
+PHKG2	AR		glycogen storage disease IXc
+PHYH	AR		phytanoyl-CoA hydroxylase deficiency
+PIDD1	AR		intellectual developmental disorder, autosomal recessive 75, with neuropsychiatric features and variant lissencephaly
+PIEZO1	AR	yes	obsolete PIEZO1-related generalized lymphatic dysplasia with non-immune hydrops fetalis
+PIGA	XL		complex neurodevelopmental disorder
+PIGB	AR		developmental and epileptic encephalopathy, 80
+PIGK	AR		neurodevelopmental disorder with hypotonia and cerebellar atrophy, with or without seizures
+PIGL	AR		syndromic intellectual disability
+PIGN	AR		multiple congenital anomalies-hypotonia-seizures syndrome 1
+PIGO	AR		complex neurodevelopmental disorder
+PIGP	AR		developmental and epileptic encephalopathy, 55
+PIGQ	AR		developmental and epileptic encephalopathy, 77
+PIGS	AR		glycosylphosphatidylinositol biosynthesis defect 18
+PIGT	AR		multiple congenital anomalies-hypotonia-seizures syndrome 3
+PIGV	AR		hyperphosphatasia with impaired intellectual development syndrome 1
+PIK3CD	AR	yes	immunodeficiency 14b, autosomal recessive
+PIK3CG	AR		immunodeficiency 97 with autoinflammation
+PINK1	AR		Parkinson disease
+PISD	AR		Liberfarb syndrome
+PJVK	AR		nonsyndromic genetic hearing loss
+PKD1	AR	yes	autosomal recessive polycystic kidney disease
+PKHD1	AR		autosomal recessive polycystic kidney disease
+PKLR	AR		pyruvate kinase deficiency of red cells
+PLA2G4A	AR		cytosolic phospholipase-A2 alpha deficiency associated bleeding disorder
+PLA2G6	AR		PLA2G6-associated neurodegeneration
+PLCB1	AR		genetic developmental and epileptic encephalopathy
+PLCB4	AR	yes	auriculocondylar syndrome 2
+PLCE1	AR		nephrotic syndrome, type 3
+PLCZ1	AR		spermatogenic failure 17
+PLD1	AR		PLD1-related congenital heart disease
+PLD4	AR		systemic lupus erythematosus 18
+PLEC	AR		PLEC-related muscular dystrophy-epidermolysis bullosa simplex spectrum disorder
+PLEKHG5	AR		neuromuscular disease
+PLEKHM1	AR		autosomal recessive osteopetrosis 6
+PLEKHM2	AR		dilated cardiomyopathy
+PLG	AR		hypoplasminogenemia
+PLP1	XL		Pelizaeus-Merzbacher spectrum disorder
+PLPBP	AR		pyridoxine-dependent epilepsy
+PMFBP1	AR		male infertility due to acephalic spermatozoa
+PMM2	AR		PMM2-congenital disorder of glycosylation; hyperinsulinemic hypoglycemia with polycystic kidney disease
+PMPCA	AR		mitochondrial disease
+PMS2	AR	yes	mismatch repair cancer syndrome 1
+PNKP	AR		microcephaly, seizures, and developmental delay
+PNP	AR		purine nucleoside phosphorylase deficiency
+PNPLA2	AR		neutral lipid storage myopathy
+PNPLA6	AR		PNPLA6-related spastic paraplegia with or without ataxia; retinal dystrophy-ataxia-pituitary hormone abnormality-hypogonadism syndrome
+PNPLA8	AR		mitochondrial disease
+PNPO	AR		pyridoxal phosphate-responsive seizures
+PNPT1	AR		Leigh syndrome
+POC1B	AR		cone-rod dystrophy 20
+POGLUT1	AR		autosomal recessive limb-girdle muscular dystrophy
+POLA1	XL		X-linked reticulate pigmentary disorder
+POLH	AR		xeroderma pigmentosum variant type
+POLR1C	AR		POLR1C-related disorder; Treacher Collins syndrome 3
+POLR3A	AR		POLR3A-related disorder
+POLR3B	AR	yes	POLR3B-related disorder
+POMGNT1	AR		myopathy caused by variation in POMGNT1
+POMGNT2	AR		myopathy caused by variation in POMGNT2
+POMT1	AR		myopathy caused by variation in POMT1
+POMT2	AR		myopathy caused by variation in POMT2
+POPDC3	AR		autosomal recessive limb-girdle muscular dystrophy
+POR	AR		Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis
+PORCN	XL		focal dermal hypoplasia
+POU3F4	XL		nonsyndromic genetic hearing loss
+PPA2	AR		dilated cardiomyopathy
+PPM1K	AR		maple syrup urine disease, mild variant
+PPP1R13L	AR		arrhythmogenic cardiomyopathy with variable ectodermal abnormalities
+PPP1R21	AR		neurodevelopmental disorder with hypotonia, facial dysmorphism, and brain abnormalities
+PPT1	AR		neuronal ceroid lipofuscinosis
+PQBP1	XL		Renpenning syndrome
+PRF1	AR		familial hemophagocytic lymphohistiocytosis 2
+PRG4	AR		camptodactyly-arthropathy-coxa vara-pericarditis syndrome
+PRIM1	AR		primordial dwarfism-immunodeficiency-lipodystrophy syndrome
+PRKCD	AR		systemic lupus erythematosus
+PRKDC	AR		severe combined immunodeficiency due to DNA-PKcs deficiency
+PRKN	AR		Parkinson disease
+PRODH	AR		hyperprolinemia type 1
+PROM1	AR	yes	PROM1-related recessive retinopathy
+PRORP	AR		mitochondrial disease
+PRPS1	XL		PRPS1 deficiency disorder
+PRSS56	AR		isolated microphthalmia 6
+PRX	AR		Charcot-Marie-Tooth disease type 4
+PSAP	AR		Gaucher disease due to saposin C deficiency; Krabbe disease due to saposin A deficiency; combined PSAP deficiency; metachromatic leukodystrophy due to saposin B deficiency
+PSAT1	AR		neurometabolic disorder due to serine deficiency
+PSPH	AR		neurometabolic disorder due to serine deficiency
+PTCHD1	XL		X-linked complex neurodevelopmental disorder
+PTCRA	AR		immunodeficiency 126, susceptibility to
+PTPRC	AR		immunodeficiency 104
+PTPRQ	AR		hearing loss, autosomal recessive
+PTS	AR		BH4-deficient hyperphenylalaninemia A
+PUS1	AR		mitochondrial disease
+PXDN	AR		anterior segment dysgenesis 7
+PYCR1	AR		autosomal recessive cutis laxa type 2B
+PYCR2	AR		leukodystrophy, hypomyelinating, 10
+PYGL	AR		glycogen storage disease VI
+PYGM	AR		glycogen storage disease V
+PYROXD1	AR		myofibrillar myopathy 8
+QARS1	AR		diffuse cerebral and cerebellar atrophy - intractable seizures - progressive microcephaly syndrome
+QDPR	AR		dihydropteridine reductase deficiency
+RAB18	AR		Warburg micro syndrome
+RAB23	AR		RAB23-related Carpenter syndrome
+RAB27A	AR		Griscelli syndrome type 2
+RAB28	AR		RAB28-related retinopathy
+RAB39B	XL		early-onset parkinsonism-intellectual disability syndrome
+RAB3GAP1	AR		Warburg micro syndrome
+RAB3GAP2	AR		Warburg micro syndrome
+RAC2	AR	yes	immunodeficiency 73c with defective neutrophil chemotaxis and hypogammaglobulinemia
+RAG1	AR		recombinase activating gene 1 deficiency
+RAG2	AR		recombinase activating gene 2 deficiency
+RARS1	AR		hypomyelinating leukodystrophy 9
+RARS2	AR		mitochondrial disease
+RASGRP1	AR		immunodeficiency 64
+RASGRP2	AR		platelet-type bleeding disorder 18
+RBCK1	AR		polyglucosan body myopathy 1 with or without immunodeficiency
+RBM10	XL		TARP syndrome
+RBM8A	AR		thrombocytopenia-absent radius syndrome
+RBP3	AR		inherited retinal dystrophy
+RBP4	AR		progressive retinal dystrophy due to retinol transport defect
+RC3H1	AR		hemophagocytic lymphohistiocytosis, familial, 6
+RCBTB1	AR		RCBTB1-related retinopathy
+RD3	AR		RD3-related retinopathy
+RDH12	AR	yes	RDH12-related recessive retinopathy
+RDH5	AR		RDH5-related retinopathy
+RDX	AR		nonsyndromic genetic hearing loss
+RECQL4	AR		Rothmund-Thomson syndrome
+REEP6	AR		inherited retinal dystrophy
+REL	AR		immunodeficiency 92
+RELB	AR		immunodeficiency 53
+RELN	AR		lissencephaly with cerebellar hypoplasia
+REN	AR	yes	renal tubular dysgenesis of genetic origin
+RETREG1	AR		hereditary sensory and autonomic neuropathy
+RFC1	AR		cerebellar ataxia with neuropathy and bilateral vestibular areflexia syndrome
+RFT1	AR		RFT1-congenital disorder of glycosylation
+RFX5	AR		MHC class II deficiency
+RFXANK	AR		MHC class II deficiency
+RFXAP	AR		MHC class II deficiency
+RGS9	AR		bradyopsia
+RHOBTB2	AR	yes	complex neurodevelopmental disorder
+RHOG	AR		hemophagocytic lymphohistiocytosis due to RhoG deficiency
+RHOH	AR		epidermodysplasia verruciformis, susceptibility to, 4
+RIN2	AR		RIN2 syndrome
+RIPK1	AR		immunodeficiency 57
+RIPOR2	AR		nonsyndromic genetic hearing loss
+RLBP1	AR		RLBP1-related retinopathy
+RMND1	AR		mitochondrial disease
+RMRP	AR		cartilage-hair hypoplasia
+RNASEH2A	AR		RNASEH2A-related type 1 interferonopathy
+RNASEH2B	AR		RNASEH2B-related type 1 interferonopathy
+RNASEH2C	AR		RNASEH2C-related type 1 interferonopathy
+RNF168	AR		RIDDLE syndrome
+RNF31	AR		immunodeficiency 115 with autoinflammation
+RNU12	AR		RNU12-related minor spliceopathy disorder
+RNU4ATAC	AR		RNU4ATAC spectrum disorder
+RNU7-1	AR		RNU7-1-related type 1 interferonopathy
+ROBO3	AR		gaze palsy, familial horizontal, with progressive scoliosis 1
+ROGDI	AR		amelocerebrohypohidrotic syndrome
+RP1	AR	yes	RP1-related recessive retinopathy
+RP2	XL		RP2-related retinopathy
+RPE65	AR	yes	RPE65-related recessive retinopathy
+RPGR	XL		RPGR-related retinopathy
+RPGRIP1	AR		inherited retinal dystrophy
+RPGRIP1L	AR		ciliopathy
+RPL10	XL		X-linked syndromic intellectual disability
+RPL3L	AR		cardiomyopathy, dilated, 2D
+RPS6KA3	XL		Coffin-Lowry syndrome
+RS1	XL		X-linked retinoschisis
+RSPH1	AR		primary ciliary dyskinesia 24
+RSPH3	AR		primary ciliary dyskinesia 32
+RSPH4A	AR		primary ciliary dyskinesia 11
+RSPH9	AR		primary ciliary dyskinesia 12
+RSRC1	AR		complex neurodevelopmental disorder
+RTN4IP1	AR		optic atrophy 10 with or without ataxia, impaired intellectual development, and seizures
+RTTN	AR		microcephalic primordial dwarfism due to RTTN deficiency
+RUSC2	AR		intellectual developmental disorder, autosomal recessive 61
+RXYLT1	AR		muscle-eye-brain disease
+RYR1	AR	yes	RYR1-related myopathy
+S1PR2	AR		nonsyndromic genetic hearing loss
+SAG	AR		retinitis pigmentosa 47
+SAMHD1	AR		SAMHD1-related type 1 interferonopathy
+SARS2	AR		mitochondrial disease
+SASH3	XL		combined immunodeficiency, X-linked
+SBDS	AR		Shwachman-Diamond syndrome
+SBF1	AR		Charcot-Marie-Tooth disease type 4B3
+SBF2	AR		Charcot-Marie-Tooth disease type 4B2
+SCAPER	AR		intellectual developmental disorder and retinitis pigmentosa; IDDRP
+SCARB2	AR		progressive myoclonus epilepsy
+SCLT1	AR		ciliopathy
+SCN1B	AR	yes	genetic developmental and epileptic encephalopathy
+SCN4A	AR		SCN4A-related myopathy, autosomal recessive
+SCNN1A	AR		pseudohypoaldosteronism, type IB1, autosomal recessive
+SCO1	AR		mitochondrial disease
+SCO2	AR		Charcot-Marie-Tooth disease; Leigh syndrome; mitochondrial disease
+SCP2	AR		sterol carrier protein 2 deficiency
+SDCCAG8	AR		Bardet-Biedl syndrome 16
+SDHA	AR	yes	Leigh syndrome; mitochondrial disease
+SDHAF1	AR		mitochondrial disease
+SDHB	AR	yes	mitochondrial disease
+SEC23B	AR		congenital dyserythropoietic anemia type 2
+SELENBP1	AR		extraoral halitosis due to methanethiol oxidase deficiency
+SELENON	AR		SELENON-related myopathy
+SERAC1	AR		Leigh syndrome
+SERPINB6	AR		nonsyndromic genetic hearing loss
+SERPINE1	AR		congenital plasminogen activator inhibitor type 1 deficiency
+SERPINF2	AR		alpha-2-plasmin inhibitor deficiency
+SFTPB	AR		surfactant metabolism dysfunction, pulmonary, 1
+SFXN4	AR		mitochondrial disease
+SGCA	AR		autosomal recessive limb-girdle muscular dystrophy
+SGCB	AR		autosomal recessive limb-girdle muscular dystrophy
+SGCD	AR		autosomal recessive limb-girdle muscular dystrophy
+SGCG	AR		autosomal recessive limb-girdle muscular dystrophy
+SGPL1	AR		nephrotic syndrome 14
+SGSH	AR		mucopolysaccharidosis type 3A
+SH2D1A	XL		X-linked lymphoproliferative disease due to SH2D1A deficiency
+SH3PXD2B	AR		Frank-Ter Haar syndrome
+SH3TC2	AR		Charcot-Marie-Tooth disease type 4C
+SIL1	AR		Marinesco-Sjogren syndrome
+SKIC2	AR		trichohepatoenteric syndrome 2
+SKIC3	AR		trichohepatoenteric syndrome 1
+SLC10A7	AR		short stature, amelogenesis imperfecta, and skeletal dysplasia with scoliosis
+SLC11A2	AR		microcytic anemia with liver iron overload
+SLC12A1	AR		obsolete antenatal Bartter syndrome
+SLC16A2	XL		Allan-Herndon-Dudley syndrome
+SLC17A5	AR		free sialic acid storage disease
+SLC18A2	AR		brain dopamine-serotonin vesicular transport disease
+SLC19A3	AR		Leigh syndrome
+SLC1A4	AR		spastic tetraplegia-thin corpus callosum-progressive postnatal microcephaly syndrome
+SLC22A5	AR		systemic primary carnitine deficiency disease
+SLC24A1	AR		inherited retinal dystrophy
+SLC25A1	AR		mitochondrial disease
+SLC25A12	AR		mitochondrial disease
+SLC25A13	AR		citrin deficiency
+SLC25A15	AR		ornithine translocase deficiency
+SLC25A20	AR		carnitine-acylcarnitine translocase deficiency
+SLC25A22	AR		genetic developmental and epileptic encephalopathy
+SLC25A26	AR		mitochondrial disease
+SLC25A3	AR		mitochondrial disease
+SLC25A4	AR		mitochondrial DNA depletion syndrome 12B (cardiomyopathic type), autosomal recessive
+SLC25A46	AR		neuropathy, hereditary motor and sensory, type 6B
+SLC26A2	AR		SLC26A2-related skeletal dysplasia
+SLC26A4	AR		Pendred syndrome
+SLC29A3	AR		H syndrome
+SLC2A10	AR		arterial tortuosity syndrome
+SLC30A9	AR		psychomotor regression-oculomotor apraxia-movement disorder-nephropathy syndrome
+SLC34A1	AR		hypercalcemia, infantile, 2
+SLC34A3	AR		hereditary hypophosphatemic rickets with hypercalciuria
+SLC35A1	AR		SLC35A1-congenital disorder of glycosylation
+SLC35A2	XL		X-linked complex neurodevelopmental disorder
+SLC35C1	AR		leukocyte adhesion deficiency type II
+SLC35D1	AR		schneckenbecken dysplasia
+SLC38A8	AR		foveal hypoplasia - optic nerve decussation defect - anterior segment dysgenesis syndrome
+SLC39A13	AR		Ehlers-Danlos syndrome, spondylocheirodysplastic type
+SLC39A4	AR		acrodermatitis enteropathica
+SLC3A1	AR		cystinuria
+SLC46A1	AR		hereditary folate malabsorption
+SLC4A1	AR	yes	renal tubular acidosis, distal, 4, with hemolytic anemia
+SLC4A10	AR		complex neurodevelopmental disorder
+SLC52A2	AR		Brown-Vialetto-van Laere syndrome 2
+SLC52A3	AR		Brown-Vialetto-van Laere syndrome 1
+SLC6A17	AR		intellectual developmental disorder, autosomal recessive 48
+SLC6A19	AR		Hartnup disease
+SLC6A3	AR		SLC6A3-related dopamine transporter deficiency syndrome
+SLC6A5	AR		hyperekplexia 3
+SLC6A8	XL		creatine transporter deficiency
+SLC6A9	AR		atypical glycine encephalopathy
+SLC7A5	AR		complex neurodevelopmental disorder
+SLC7A7	AR		lysinuric protein intolerance
+SLC7A9	AR		cystinuria
+SLC9A1	AR		Lichtenstein-Knorr syndrome
+SLC9A6	XL		Christianson syndrome
+SLITRK6	AR		high myopia-sensorineural deafness syndrome
+SLX4	AR		Fanconi anemia complementation group P
+SMARCAL1	AR	yes	Schimke immuno-osseous dysplasia
+SMC1A	XL		X-linked complex neurodevelopmental disorder
+SMG8	AR		Alzahrani-Kuwahara syndrome
+SMO	AR	yes	congenital hypothalamic hamartoma syndrome
+SMPD1	AR		acid sphingomyelinase deficiency
+SMPX	XL		nonsyndromic genetic hearing loss
+SMS	XL		intellectual developmental disorder, X-linked, syndromic, Snyder-Robinson type
+SNUPN	AR		SNUPN-related muscular dystrophy with or without multi-system involvement
+SNX10	AR		autosomal recessive osteopetrosis 8
+SNX14	AR		autosomal recessive spinocerebellar ataxia 20
+SORD	AR		Charcot-Marie-Tooth disease
+SOX3	XL		SOX3-related X-linked pituitary hormone deficiency with or without intellectual developmental disorder
+SP110	AR		hepatic veno-occlusive disease-immunodeficiency syndrome
+SPAG1	AR		primary ciliary dyskinesia 28
+SPART	AR		Troyer syndrome
+SPATA7	AR		inherited retinal dystrophy
+SPEF2	AR		primary ciliary dyskinesia
+SPEG	AR		myopathy, centronuclear, 5
+SPG11	AR		hereditary spastic paraplegia 11
+SPG7	AR		mitochondrial disease
+SPINK5	AR		Netherton syndrome
+SPR	AR		dopa-responsive dystonia due to sepiapterin reductase deficiency
+SPTBN2	AR	yes	autosomal recessive spinocerebellar ataxia 14
+SPTBN4	AR		neurodevelopmental disorder with hypotonia, neuropathy, and deafness
+SRD5A3	AR		SRD5A3-congenital disorder of glycosylation
+ST3GAL3	AR		complex neurodevelopmental disorder
+ST3GAL5	AR		GM3 synthase deficiency
+STAC3	AR		Bailey-Bloch congenital myopathy
+STAT1	AR	yes	immunodeficiency 31B
+STAT5B	AR	yes	growth hormone insensitivity with immune dysregulation 1, autosomal recessive
+STEEP1	XL		intellectual developmental disorder, X-linked 107
+STIL	AR		autosomal recessive primary microcephaly
+STIM1	AR	yes	combined immunodeficiency due to STIM1 deficiency
+STK36	AR		ciliary dyskinesia, primary, 46
+STK4	AR		combined immunodeficiency due to STK4 deficiency
+STN1	AR		cerebroretinal microangiopathy with calcifications and cysts 2
+STRC	AR		nonsyndromic genetic hearing loss
+STT3A	AR	yes	STT3A-congenital disorder of glycosylation
+STX11	AR		familial hemophagocytic lymphohistiocytosis 4
+STXBP2	AR		familial hemophagocytic lymphohistiocytosis 5
+SUCLA2	AR		Leigh syndrome; mitochondrial disease
+SUCLG1	AR		Leigh syndrome
+SUGCT	AR		glutaric acidemia type 3
+SUMF1	AR		mucosulfatidosis
+SUOX	AR		isolated sulfite oxidase deficiency
+SURF1	AR		Leigh syndrome; mitochondrial disease
+SYCE1	AR		SYCE1-related gametogenic failure
+SYN1	XL		X-linked complex neurodevelopmental disorder
+SYNE1	AR		arthrogryposis multiplex congenita 3, myogenic type; autosomal recessive ataxia, Beauce type
+SYNE4	AR		nonsyndromic genetic hearing loss
+SYNJ1	AR		genetic developmental and epileptic encephalopathy
+SYP	XL		non-syndromic X-linked intellectual disability
+SZT2	AR		genetic developmental and epileptic encephalopathy
+TACO1	AR		Leigh syndrome; mitochondrial disease
+TAFAZZIN	XL		Barth syndrome
+TAMM41	AR		mitochondrial disease
+TAP1	AR		MHC class I deficiency
+TAP2	AR		MHC class I deficiency
+TAPBP	AR		MHC class I deficiency
+TARS2	AR		mitochondrial disease
+TAT	AR		tyrosinemia type II
+TBC1D24	AR		DOORS syndrome
+TBC1D32	AR		ciliopathy
+TBC1D8B	XL		nephrotic syndrome, type 20
+TBCD	AR		early-onset progressive diffuse brain atrophy-microcephaly-muscle weakness-optic atrophy syndrome
+TBCE	AR		encephalopathy, progressive, with amyotrophy and optic atrophy
+TBCK	AR		syndromic complex neurodevelopmental disorder
+TBX22	XL		cleft palate with or without ankyloglossia, X-linked
+TBXAS1	AR		ghosal hematodiaphyseal dysplasia
+TCAP	AR		autosomal recessive limb-girdle muscular dystrophy
+TCIRG1	AR		autosomal recessive osteopetrosis 1
+TCN2	AR		transcobalamin II deficiency
+TCTN1	AR		ciliopathy
+TCTN2	AR		Joubert syndrome 24
+TCTN3	AR		ciliopathy
+TDP2	AR		spinocerebellar ataxia, autosomal recessive 23
+TECRL	AR		catecholaminergic polymorphic ventricular tachycardia
+TECTA	AR	yes	nonsyndromic genetic hearing loss
+TELO2	AR		TELO2-related intellectual disability-neurodevelopmental disorder
+TEX15	AR		spermatogenic failure
+TF	AR		atransferrinemia
+TFE3	XL		X-linked syndromic complex neurodevelopmental disorder
+TFR2	AR		hemochromatosis type 3
+TFRC	AR		TFRC-related combined immunodeficiency
+TGDS	AR		Catel-Manzke syndrome
+TH	AR		tyrosine hydroxylase deficiency
+THOC2	XL		X-linked complex neurodevelopmental disorder
+THOC6	AR		THOC6-related developmental delay-microcephaly-facial dysmorphism syndrome
+TIMM50	AR		3-methylglutaconic aciduria type 9
+TIMM8A	XL		deafness dystonia syndrome
+TIMMDC1	AR		mitochondrial disease
+TK2	AR		mitochondrial disease
+TLR7	XL		systemic lupus erythematosus 17
+TMEM126A	AR		autosomal recessive optic atrophy, OPA7 type; mitochondrial disease
+TMEM126B	AR		mitochondrial disease
+TMEM138	AR		ciliopathy
+TMEM165	AR		TMEM165-congenital disorder of glycosylation
+TMEM216	AR		ciliopathy
+TMEM231	AR		ciliopathy
+TMEM237	AR		Joubert syndrome 14
+TMEM67	AR		ciliopathy
+TMEM70	AR		mitochondrial disease
+TMEM94	AR		intellectual developmental disorder with cardiac defects and dysmorphic facies
+TMIE	AR		nonsyndromic genetic hearing loss
+TMPRSS3	AR		nonsyndromic genetic hearing loss
+TMPRSS6	AR		IRIDA syndrome
+TNFRSF13B	AR		immunodeficiency, common variable, 2
+TNFRSF9	AR		immunodeficiency 109 with lymphoproliferation
+TNFSF11	AR		autosomal recessive osteopetrosis 2
+TNNI3	AR	yes	dilated cardiomyopathy 2A
+TNNT1	AR		nemaline myopathy 5
+TNR	AR		neurodevelopmental disorder, nonprogressive, with spasticity and transient opisthotonus
+TOR1AIP1	AR		TOR1AIP1-related multisystem disorder; TOR1AIP1-related myopathy
+TP73	AR		ciliary dyskinesia, primary, 47, and lissencephaly
+TPK1	AR		Leigh syndrome
+TPM3	AR	yes	TPM3-related myopathy
+TPP1	AR		neuronal ceroid lipofuscinosis
+TPP2	AR		immunodeficiency 78 with autoimmunity and developmental delay
+TPRN	AR		nonsyndromic genetic hearing loss
+TRAC	AR		TCR-alpha-beta-positive T-cell deficiency
+TRAF3IP1	AR		ciliopathy
+TRAPPC11	AR		autosomal recessive limb-girdle muscular dystrophy
+TRAPPC4	AR		neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy
+TRAPPC6B	AR		neurodevelopmental disorder with microcephaly, epilepsy, and brain atrophy
+TRAPPC9	AR		intellectual disability-obesity-brain malformations-facial dysmorphism syndrome
+TRDN	AR		catecholaminergic polymorphic ventricular tachycardia; long QT syndrome
+TREX1	AR	yes	TREX1-related type 1 interferonopathy
+TRIM32	AR		autosomal recessive limb-girdle muscular dystrophy
+TRIM37	AR		mulibrey nanism
+TRIM63	AR		hypertrophic cardiomyopathy
+TRIOBP	AR		hearing loss, autosomal recessive
+TRIP11	AR		TRIP11-related skeletal dysplasia
+TRIT1	AR		mitochondrial disease
+TRMT1	AR		complex neurodevelopmental disorder
+TRMT10C	AR		mitochondrial disease
+TRMT5	AR		mitochondrial disease
+TRMU	AR		Leigh syndrome; mitochondrial disease
+TRNT1	AR		congenital sideroblastic anemia-B-cell immunodeficiency-periodic fever-developmental delay syndrome
+TRPM1	AR		TRPM1-related retinopathy
+TSFM	AR		Leigh syndrome; mitochondrial disease
+TSPAN7	XL		non-syndromic X-linked intellectual disability
+TTC12	AR		ciliary dyskinesia, primary, 45
+TTC19	AR		Leigh syndrome; mitochondrial disease
+TTC21B	AR		nephronophthisis 12
+TTC7A	AR		multiple intestinal atresia
+TTC8	AR		TTC8-related ciliopathy
+TTLL5	AR		TTLL5-related retinopathy
+TTN	AR	yes	TTN-related myopathy
+TUBGCP6	AR		microcephaly and chorioretinopathy 1
+TUFM	AR		mitochondrial disease
+TULP1	AR		Leber congenital amaurosis 15
+TULP3	AR		ciliopathy
+TUSC3	AR		intellectual disability
+TWNK	AR		Perrault syndrome 5
+TXNDC15	AR		ciliopathy
+TXNL4A	AR		choanal atresia-hearing loss-cardiac defects-craniofacial dysmorphism syndrome
+TYMP	AR		mitochondrial disease
+TYR	AR		oculocutaneous albinism type 1
+UBA5	AR		genetic developmental and epileptic encephalopathy
+UBE2A	XL		intellectual developmental disorder, X-linked, syndromic, Nascimento type
+UBE3B	AR		oculocerebrofacial syndrome, Kaufman type
+UBQLN2	XL		amyotrophic lateral sclerosis type 15
+UBR1	AR		Johanson-Blizzard syndrome
+UCHL1	AR	yes	hereditary spastic paraplegia
+UFM1	AR		leukodystrophy, hypomyelinating, 14
+UNC13A	AR	yes	neurodevelopmental disorder with hypotonia, epilepsy, and absent speech
+UNC13D	AR		familial hemophagocytic lymphohistiocytosis 3
+UNC80	AR		hypotonia, infantile, with psychomotor retardation and characteristic facies 2
+UNG	AR		hyper-IgM syndrome type 5
+UPF3B	XL		X-linked complex neurodevelopmental disorder
+UQCC2	AR		mitochondrial disease
+UQCRC2	AR		mitochondrial disease
+UQCRFS1	AR		mitochondrial disease
+UROS	AR		cutaneous porphyria
+USH1C	AR		Usher syndrome type 1
+USH2A	AR		Usher syndrome type 2
+USP27X	XL		X-linked complex neurodevelopmental disorder
+USP9X	XL		X-linked syndromic intellectual disability
+VARS1	AR		neurodevelopmental disorder with microcephaly, seizures, and cortical atrophy
+VARS2	AR		mitochondrial disease
+VIPAS39	AR		arthrogryposis, renal dysfunction, and cholestasis 2
+VKORC1	AR		vitamin K-dependent clotting factors, combined deficiency of, type 2
+VLDLR	AR		cerebellar ataxia, impaired intellectual development, and dysequilibrium syndrome 1
+VPS11	AR		VPS11-related neurological disorder
+VPS13A	AR		VPS13A-related neurodegenerative disease
+VPS13B	AR		Cohen syndrome
+VPS33A	AR		mucopolysaccharidosis-plus syndrome
+VPS33B	AR		arthrogryposis, renal dysfunction, and cholestasis 1
+WARS2	AR		mitochondrial disease
+WAS	XL		Wiskott-Aldrich syndrome; X-linked severe congenital neutropenia
+WDPCP	AR		ciliopathy
+WDR19	AR		ciliopathy
+WDR35	AR		cranioectodermal dysplasia 2; short-rib thoracic dysplasia 7 with or without polydactyly
+WDR45	XL		X-linked complex neurodevelopmental disorder
+WDR62	AR		microcephaly 2, primary, autosomal recessive, with or without cortical malformations
+WDR72	AR		amelogenesis imperfecta
+WFS1	AR	yes	Wolfram syndrome
+WHRN	AR		Usher syndrome type 2D; nonsyndromic genetic hearing loss
+WIPF1	AR		Wiskott-Aldrich syndrome 2
+WNK1	AR		neuropathy, hereditary sensory and autonomic, type 2A
+WRAP53	AR		dyskeratosis congenita, autosomal recessive 3
+WRN	AR		Werner syndrome
+WWOX	AR		genetic developmental and epileptic encephalopathy
+XIAP	XL		X-linked lymphoproliferative disease due to XIAP deficiency
+XPA	AR		xeroderma pigmentosum group A
+XPC	AR		xeroderma pigmentosum group C
+XPNPEP3	AR		nephronophthisis-like nephropathy 1
+YARS2	AR		mitochondrial disease
+YIF1B	AR		Kaya-Barakat-Masson syndrome
+ZAP70	AR		combined immunodeficiency due to ZAP70 deficiency
+ZBTB11	AR		syndromic complex neurodevelopmental disorder
+ZBTB24	AR		immunodeficiency-centromeric instability-facial anomalies syndrome 2
+ZC4H2	XL		X-linked syndromic intellectual disability
+ZDHHC9	XL		syndromic X-linked intellectual disability Raymond type
+ZFX	XL		X-linked syndromic complex neurodevelopmental disorder
+ZIC3	XL		congenital heart disease with heterotaxy syndrome
+ZMPSTE24	AR		mandibuloacral dysplasia with type B lipodystrophy; obsolete lethal restrictive dermopathy
+ZMYND10	AR		primary ciliary dyskinesia 22
+ZMYND15	AR		spermatogenic failure
+ZNF341	AR		hyper-IgE recurrent infection syndrome 3, autosomal recessive
+ZNF423	AR		ciliopathy
+ZNF711	XL		X-linked complex neurodevelopmental disorder

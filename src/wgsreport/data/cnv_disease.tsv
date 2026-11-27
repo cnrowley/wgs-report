@@ -1,0 +1,13 @@
+# Non-psychiatric disease associations for screened CNV regions. Inclusion (do not relax): replicated in an independent cohort (Estonian Biobank, Auwerx et al.
+# Genome Med 2024;16:5, Table S4), or significant after Bonferroni correction in UK Biobank AND a known consequence of that CNV (Crawford et al. J Med Genet
+# 2019;56:131, Table 2). The two papers share UK Biobank, so their agreement is not independent replication. White British / Estonian, adults; wide intervals.
+region	change	condition	evidence	effect	source
+16p11.2 proximal (BP4-BP5)	del	acute kidney injury	independent replication	UK Biobank OR 16.0; Estonian Biobank OR 41.8, p=0.0002 (1 case in 9 carriers)	Auwerx 2024
+16p11.2 proximal (BP4-BP5)	del	essential hypertension	independent replication (nominal)	UK Biobank OR 4.6; Estonian Biobank OR 5.0, p=0.004 (5 cases in 10 carriers)	Auwerx 2024
+16p11.2 proximal (BP4-BP5)	del	chronic kidney disease	independent replication (nominal)	deletions and duplications analysed together: UK Biobank OR 4.4; Estonian Biobank OR 8.4, p=0.03 (1 case in 13 carriers)	Auwerx 2024
+17q12 (includes HNF1B)	del	chronic kidney disease	independent replication	deletions and duplications analysed together: UK Biobank OR 6.5; Estonian Biobank OR 18.3, p=0.0009 (2 cases in 13 carriers)	Auwerx 2024
+17p12 (includes PMP22), duplication	dup	neuropathy	UK Biobank only; known effect	OR 21.8 (95% CI 15.0-31.5)	Crawford 2019
+17p12 (includes PMP22), deletion	del	neuropathy	UK Biobank only; known effect	OR 3.0 (95% CI 2.0-4.5)	Crawford 2019
+17q12 (includes HNF1B)	del	insulin-dependent diabetes	UK Biobank only; known effect	OR 135.9 (95% CI 31.2-641.1), 4 cases among 7 carriers	Crawford 2019
+16p11.2 proximal (BP4-BP5)	del	obesity	UK Biobank only; known effect	OR 6.8 (95% CI 4.0-11.0)	Crawford 2019
+16p11.2 proximal (BP4-BP5)	del	type 2 diabetes	UK Biobank only; known effect (secondary to body weight in part)	OR 6.1 (95% CI 3.8-9.5)	Crawford 2019

@@ -1,0 +1,90 @@
+# ACMG secondary findings list v3.3 (Lee et al., Genet Med 2025;27(8):101454, doi:10.1016/j.gim.2025.101454; PMID 40568962).
+# Table 1 transcribed from the PMC author manuscript (PMC12318660); v3.2 = Miller et al. 2023 (PMC10524344) plus ABCD1, CYP27A1, PLN.
+# Inheritance: AD autosomal dominant, AR autosomal recessive, SD semidominant, XL X-linked.
+# To update when ACMG publishes a new version: edit this file, bump VERSION below, run `pytest tests/test_data.py`.
+# VERSION=3.3
+gene	phenotype	inheritance
+ABCD1	X-linked adrenoleukodystrophy	XL
+ACTA2	Aortopathies	AD
+ACTC1	Hypertrophic cardiomyopathy	AD
+ACVRL1	Hereditary hemorrhagic telangiectasia	AD
+APC	Familial adenomatous polyposis	AD
+APOB	Familial hypercholesterolemia	AD
+ATP7B	Wilson disease	AR
+BAG3	Dilated cardiomyopathy	AD
+BMPR1A	Juvenile polyposis syndrome	AD
+BRCA1	Hereditary breast and ovarian cancer	AD
+BRCA2	Hereditary breast and ovarian cancer	AD
+BTD	Biotinidase deficiency	AR
+CACNA1S	Malignant hyperthermia	AD
+CALM1	Long QT syndrome types 14-16	AD
+CALM2	Long QT syndrome types 14-16	AD
+CALM3	Long QT syndrome types 14-16	AD
+CASQ2	Catecholaminergic polymorphic ventricular tachycardia	AR
+COL3A1	Vascular Ehlers-Danlos syndrome	AD
+CYP27A1	Cerebrotendinous xanthomatosis	AR
+DES	Dilated cardiomyopathy	AD
+DSC2	Arrhythmogenic right ventricular cardiomyopathy	AD
+DSG2	Arrhythmogenic right ventricular cardiomyopathy	AD
+DSP	Arrhythmogenic right ventricular cardiomyopathy	AD
+ENG	Hereditary hemorrhagic telangiectasia	AD
+FBN1	Aortopathies	AD
+FLNC	Dilated cardiomyopathy	AD
+GAA	Pompe disease	AR
+GLA	Fabry disease	XL
+HFE	Hereditary hemochromatosis (p.C282Y homozygotes)	AR
+HNF1A	Maturity-onset diabetes of the young	AD
+KCNH2	Long QT syndrome types 1-2	AD
+KCNQ1	Long QT syndrome types 1-2	AD
+LDLR	Familial hypercholesterolemia	SD
+LMNA	Dilated cardiomyopathy	AD
+MAX	Hereditary paraganglioma-pheochromocytoma	AD
+MEN1	Multiple endocrine neoplasia type 1	AD
+MLH1	Lynch syndrome	AD
+MSH2	Lynch syndrome	AD
+MSH6	Lynch syndrome	AD
+MUTYH	MUTYH-associated polyposis	AR
+MYBPC3	Hypertrophic cardiomyopathy	AD
+MYH11	Aortopathies	AD
+MYH7	Hypertrophic cardiomyopathy	AD
+MYL2	Hypertrophic cardiomyopathy	AD
+MYL3	Hypertrophic cardiomyopathy	AD
+NF2	NF2-related schwannomatosis	AD
+OTC	Ornithine transcarbamylase deficiency	XL
+PALB2	Hereditary breast and ovarian cancer	AD
+PCSK9	Familial hypercholesterolemia	AD
+PKP2	Arrhythmogenic right ventricular cardiomyopathy	AD
+PLN	Dilated cardiomyopathy (also ARVC, HCM)	AD
+PMS2	Lynch syndrome	AD
+PRKAG2	Hypertrophic cardiomyopathy	AD
+PTEN	PTEN hamartoma tumor syndrome	AD
+RB1	Retinoblastoma	AD
+RBM20	Dilated cardiomyopathy	AD
+RET	Medullary thyroid cancer / MEN type 2	AD
+RPE65	RPE65-related retinopathy	AR
+RYR1	Malignant hyperthermia	AD
+RYR2	Catecholaminergic polymorphic ventricular tachycardia	AD
+SCN5A	Long QT syndrome type 3 / Brugada syndrome	AD
+SDHAF2	Hereditary paraganglioma-pheochromocytoma	AD
+SDHB	Hereditary paraganglioma-pheochromocytoma	AD
+SDHC	Hereditary paraganglioma-pheochromocytoma	AD
+SDHD	Hereditary paraganglioma-pheochromocytoma	AD
+SMAD3	Aortopathies	AD
+SMAD4	Juvenile polyposis / hereditary hemorrhagic telangiectasia	AD
+STK11	Peutz-Jeghers syndrome	AD
+TGFBR1	Aortopathies	AD
+TGFBR2	Aortopathies	AD
+TMEM127	Hereditary paraganglioma-pheochromocytoma	AD
+TMEM43	Arrhythmogenic right ventricular cardiomyopathy	AD
+TNNC1	Dilated cardiomyopathy	AD
+TNNI3	Hypertrophic cardiomyopathy	AD
+TNNT2	Dilated cardiomyopathy	AD
+TP53	Li-Fraumeni syndrome	AD
+TPM1	Hypertrophic cardiomyopathy	AD
+TRDN	Catecholaminergic polymorphic ventricular tachycardia	AR
+TSC1	Tuberous sclerosis complex	AD
+TSC2	Tuberous sclerosis complex	AD
+TTN	Dilated cardiomyopathy (truncating variants only)	AD
+TTR	Hereditary transthyretin amyloidosis	AD
+VHL	Von Hippel-Lindau syndrome	AD
+WT1	WT1-related Wilms tumor	AD

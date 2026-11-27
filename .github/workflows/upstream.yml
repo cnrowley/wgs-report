@@ -1,0 +1,15 @@
+name: upstream-contracts
+# Weekly check that PGS Catalog, ClinVar, Ensembl and the EBI reference registry still look the way the parsers expect.
+# A failure here means an upstream format or URL changed: see CLAUDE.md, section "When an upstream dependency breaks".
+on:
+  schedule: [{cron: "17 5 * * 1"}]
+  workflow_dispatch:
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e . pytest
+      - run: pytest -m network -q

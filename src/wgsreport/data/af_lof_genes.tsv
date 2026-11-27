@@ -1,0 +1,26 @@
+# Genes whose rare loss-of-function variants (MAF<1%, LOFTEE high-confidence) were associated with atrial fibrillation
+# in UK Biobank. Source: eTable 4 of the Supplement to the JAMA Cardiology 2025 paper on genomic risk prediction of
+# incident AF (doi:10.1001/jamacardio.2025.3664, Contributions of Common, Rare, and Somatic Genetic Variants to Incidence of Atrial Fibrillation, JAMA Cardiol 2025; supplement file hoi250056supp1).
+# or = odds ratio for prevalent+incident AF among carriers vs non-carriers (adjusted for age, sex, 10 PCs).
+gene	or	ci
+TTN	1.66	1.52-1.81
+KDM5B	2.58	1.75-3.80
+C10orf71	1.96	1.41-2.74
+RPL3L	1.57	1.39-1.77
+PKP2	1.76	1.45-2.14
+CTNNA3	2.51	1.74-3.62
+MYBPC3	2.75	1.81-4.17
+DES	2.99	1.70-5.26
+RBM20	2.18	1.39-3.44
+FLNC	2.71	1.25-5.87
+PRKAG2	2.72	1.13-6.54
+ACTC1	3.60	1.04-12.49
+ACTN2	2.67	1.37-5.19
+GATA6	4.80	1.81-12.74
+GATA5	2.32	1.29-4.17
+NKX2-5	7.50	1.91-29.44
+TGFB3	7.13	2.13-23.87
+CDH2	10.23	2.26-46.22
+PPA2	2.00	1.03-3.88
+WWTR1	3.50	1.19-10.27
+PDLIM3	2.22	1.09-4.52
