@@ -334,9 +334,7 @@ def _repeats_html(rp) -> list:
     ok = ", ".join(sorted({x["gene"] for x in interp if x["worst"] == "normal range"}))
     if ok:
         out.append(f"<p class='mut'>Normal range: {E(ok)}.</p>")
-    out.append("<p class='mut'>Screen of about 30 known loci only; sizes are reliable up to about the read length, and a large expansion appears as a lower "
-               "bound. Reads whose mate maps to an alternate contig absent from the reference are not paired, and repeat interruptions are not "
-               "assessed. A result outside the normal range is a lead for a clinical test, not a diagnosis.</p>")
+    out.append("<p class='mut'>About 30 known repeat loci; sizes are estimates. A result outside the normal range needs a clinical test.</p>")
     return out
 
 def _table(df, cols, heads=None):
@@ -358,8 +356,7 @@ def _cancer_html(res: dict, cv_hits) -> list:
     import pandas as pd
     parts = ["<h2>Inherited cancer susceptibility</h2>",
              "<p>Two different things are shown separately and are <b>not</b> combined into one risk: rare pathogenic variants in "
-             "predisposition genes (large effects, few people) and polygenic scores (many small effects, everyone has a value). "
-             "No absolute lifetime risk is calculated: that needs family history, age, sex and a validated model.</p>"]
+             "predisposition genes (large effects, few people) and polygenic scores (many small effects, everyone has a value).</p>"]
     has = cv_hits is not None and len(cv_hits) and "cancer_gene" in cv_hits
     hits = cv_hits[cv_hits["cancer_gene"].astype(str) != ""] if has else pd.DataFrame()
     if len(hits):
@@ -380,7 +377,7 @@ def _cancer_html(res: dict, cv_hits) -> list:
                      "one copy in a recessive-only gene is carrier status). Penetrance depends on the variant, sex, family history and ancestry and is "
                      "not shown here because no number is embedded without a verified citation: use GeneReviews/ClinGen for the gene.</p>")
     else:
-        parts.append("<p>None found. <b>Not</b> a negative clinical result (see C).</p>")
+        parts.append("<p>None found.</p>")
     if len(recessive_carrier):
         rc = recessive_carrier.copy()
         rc["condition"] = rc["condition"].map(lambda x: _short(x, 3))
@@ -399,36 +396,28 @@ def _cancer_html(res: dict, cv_hits) -> list:
                      "Treat as leads to check against ClinVar, not as findings.</p>"
                      + _table(low, ["gene (inheritance)", "rsid", "zygosity", "pattern", "condition", "significance", "stars", "consequence", "af_1000g"]))
     parts.append("<h3>B. Polygenic scores</h3>")
-    rows = [r for r in res.get("traits", []) if r.get("id") in CANCER_PGS]
+    rows = [r for r in res.get("traits", []) if r.get("id") in CANCER_PGS and not r.get("skipped")]
     if rows:
         li = "".join(f"<li><b>{E(r['label'])}</b>: tier {E(str(r['tier']))}, "
-                     + ("not computed (sex-specific score)" if r.get("skipped") else
-                        f"percentile {r.get('percentile', float('nan')):.0f}" if r.get("percentile") is not None else "see the disease-risk table")
+                     + (f"percentile {r.get('percentile', float('nan')):.0f}" if r.get("percentile") is not None else "see the disease-risk table")
                      + f"; reference {E(str(res.get('reference_group', '')))}.</li>" for r in rows)
         parts.append(f"<ul>{li}</ul><p class='mut'>Percentile in a reference of about 500 people, not a probability of cancer; accuracy is the published "
                      "held-out value for the ancestry it was tested in, and is lower elsewhere. Full details are in the disease-risk section.</p>")
     else:
         parts.append("<p>No cancer polygenic score was computed for this genome (prostate and melanoma are the ones that meet the inclusion rule).</p>")
-    parts.append("<h3>C. What was and was not assessed</h3><ul>"
-                 "<li><b>Assessed</b>: ClinVar pathogenic / likely pathogenic SNVs and short indels in the genes marked as cancer genes, matched by exact "
-                 "position and allele, from the VCF.</li>"
-                 "<li><b>Not assessed</b>: exon-level deletions/duplications and structural variants (a common mechanism for BRCA1, PMS2 and MSH2/EPCAM), "
-                 "deep-intronic and regulatory variants, variants of uncertain significance (not interpreted as risk), mosaicism, and gene-level callable "
-                 "coverage. PMS2, and other genes with pseudogenes or segmental duplications, are poorly resolved by short reads.</li>"
-                 "<li><b>Absent sites</b> in a variant-only VCF are assumed reference. Confirm anything that matters in a clinical laboratory.</li></ul>")
+    parts.append("<p class='mut'>Checked: known ClinVar SNVs and short indels only (not deletions or duplications). Not a clinical cancer test.</p>")
     return parts
 
 
 def _clinical_tests_html(res, geno, cv_hits) -> list:
     from . import clinical_tests
     rows = clinical_tests.summarize(res, geno, cv_hits)
-    cls = {"targeted": "act-ok", "partial": "act-dose", "limited": "act-dose", "none": "act-bad"}
+    cls = {"targeted": "act-ok", "partial": "act-dose", "limited": "act-dose"}
     body = "".join(f"<tr><td>{E(r['area'])}</td><td>{E(r['test'])}</td><td>{E(r['result'])}</td>"
-                   f"<td><b class='{cls.get(r['coverage'], '')}'>{E(r['coverage'])}</b></td><td>{E(r['limits'])}</td></tr>" for r in rows)
-    return ["<h2>Common clinical genetic tests: what this report covers</h2><p>A map from familiar test names to what was checked in this genome. "
-            "<b>This is a research screen, not the test.</b> Coverage: <i>targeted</i> = the named variants are read directly; <i>partial</i> = ClinVar pathogenic/likely-pathogenic SNVs and short indels (2+ review stars) "
-            "plus whatever optional modules were run, but not structural variants or variants of uncertain significance; <i>limited</i> = weak for technical reasons; <i>none</i> = cannot be derived from a variant file.</p>"
-            "<table><tr><th>Area</th><th>Test</th><th>Result in this genome</th><th>Coverage</th><th>Limits</th></tr>" + body + "</table>"]
+                   f"<td><b class='{cls.get(r['coverage'], '')}'>{E(r['coverage'])}</b></td></tr>" for r in rows)
+    return ["<h2>Common clinical genetic tests: what was checked</h2><p class='mut'>A research screen, not the clinical test. <i>Targeted</i>: the "
+            "named variants were read. <i>Partial</i>: known ClinVar SNVs and short indels only. <i>Limited</i>: a weaker method.</p>"
+            "<table><tr><th>Area</th><th>Test</th><th>Result</th><th>Coverage</th></tr>" + body + "</table>"]
 
 
 def _carrier_html(res: dict, cv_hits) -> list:
@@ -436,11 +425,9 @@ def _carrier_html(res: dict, cv_hits) -> list:
     import pandas as pd
     from . import carrier
     out = ["<h2>4b. Carrier status for family planning</h2>",
-           "<p>Carrier status matters for a pregnancy when <b>both</b> genetic parents carry a variant in the same recessive gene, or when the "
-           "person providing the X chromosome carries an X-linked one. Compare gene by gene; the other parent needs testing that also covers what "
-           "this report cannot see. <b>This is not a laboratory carrier screen, and finding nothing for a gene does not rule out being a carrier.</b></p>"]
+           f"<p class='mut'>{E(carrier.LIMIT)}</p>"]
     if cv_hits is None:
-        return out + ["<p>The ClinVar screen was skipped, so carrier status was not assessed.</p>"]
+        return []
     found = carrier.findings(cv_hits, res.get("sex"))
 
     def table(rows, extra=()):
@@ -466,17 +453,6 @@ def _carrier_html(res: dict, cv_hits) -> list:
     if low_found and (low_found["carrier"] or low_found["risk_allele"]):
         out.append("<h4>Lower review status (fewer ClinVar review stars than the main screen)</h4><p class='mut'>Weaker evidence: leads to check, "
                    "not findings.</p>" + table(low_found["carrier"] + low_found["risk_allele"]))
-    if found["uncurated"]:
-        genes = ", ".join(sorted({h["gene"] for h in found["uncurated"]}))
-        out.append(f"<p class='mut'>ClinVar hits in genes with no recessive curation here (see section 4; absence of a curation is not evidence "
-                   f"of dominance): {E(genes)}.</p>")
-    gaps = "".join(f"<tr><td>{E(g)}</td><td>{E(c)}</td><td>{E(s)}</td><td>{E(why)}</td></tr>" for g, (c, s, why) in carrier.GAPS.items() if g != "GBA")
-    out.append("<h3>What this cannot tell you</h3><p>For these common carrier conditions the usual cause is partly or wholly invisible to this "
-               "pipeline. If you are planning children, assume they are <b>not covered</b>.</p><table><tr><th>Gene</th><th>Condition</th>"
-               f"<th>Status here</th><th>Why</th></tr>{gaps}</table>"
-               "<p class='mut'>For every other gene too: exon or whole-gene deletions and duplications, rearrangements, most repeat changes, "
-               "variants not yet in ClinVar, and new classifications after the release used are not assessed. Sites absent from a variant-only "
-               "VCF are assumed to match the reference.</p>")
     rp = res.get("repeats")
     if rp:
         rows = [x for x in rp.get("loci", []) if x.get("interpreted") and (x["gene"] in ("FMR1", "FXN") or x["worst"] in ("intermediate range", "pathogenic range"))]
@@ -485,20 +461,12 @@ def _carrier_html(res: dict, cv_hits) -> list:
         out.append("<h3>Repeat lengths relevant to children</h3><p class='mut'>Fragile X and Friedreich ataxia, plus any other screened repeat "
                    "outside the normal range, including dominant ones whose length can change between generations.</p><table><tr><th>Gene</th>"
                    f"<th>Condition</th><th>Repeat counts</th><th>Category</th><th>Note</th></tr>{body}</table>")
-    else:
-        out.append("<p><b>Repeat expansions were not run</b> (fragile X and Friedreich ataxia repeats are not assessed).</p>")
-    cov = carrier.panel_coverage(cv_hits)
-    body = "".join(f"<tr><td>{E(r['gene'])}</td><td>{E(r['condition'])}</td><td>{E(r['result'])}</td></tr>" for r in cov)
-    out.append(f"<details><summary>Gene-by-gene status for the {len(cov)} genes of the ACMG carrier-screening list (Gregg 2021)</summary>"
-               f"<table><tr><th>Gene</th><th>Condition</th><th>What this report can say</th></tr>{body}</table></details>")
-    out.append(f"<p class='mut'>Genes treated as recessive or X-linked: {len(carrier.recessive_genes()):,} (ClinGen Definitive, Strong or Moderate "
-               "curations, plus the ACMG list). Recessive genes not yet curated by ClinGen appear only in section 4.</p>")
     return out
 
 
 def _cnv_screen_html(nc: dict) -> str:
     from .cnv_screen import findings
-    head = "<h2>7b. Actionable large deletions and duplications (read depth)</h2>"
+    head = "<h2>7. Actionable large deletions and duplications (read depth)</h2>"
     if nc.get("error"):
         return head + f"<p>{E(nc['error'])}</p>"
     found = findings(nc)
@@ -528,13 +496,11 @@ def _cnv_screen_html(nc: dict) -> str:
     control = "" if x is None else (f" Built-in check: non-pseudoautosomal chrX reads {x:.2f} copies in this genome (expected about 1 with one X, "
                                     "about 2 with two).")
     return (head + "<p>Only changes with strong evidence, a substantial effect on a carrier and a documented follow-up are reported; the "
-            "strength of that guidance differs and is shown. <b>This is not a genome-wide CNV search</b>: other deletions and duplications are "
-            "not looked for.</p>" + summary + "".join(notes) +
+            "strength of that guidance differs and is shown. Not a genome-wide search.</p>" + summary + "".join(notes) +
             "<table><tr><th>Region</th><th>Change</th><th>Condition</th><th>Follow-up guidance</th><th>Median copies</th><th>Result</th></tr>"
             + rows + "</table>"
             f"<p class='mut'>Depth in 10 kb bins at MAPQ&ge;30 against an autosomal baseline of {nc['baseline_depth']:.0f}x." + control +
-            " The method has detected known duplications in public genomes; it has not been tested on a known deletion. It can miss events under "
-            "about 200 kb, mosaic events and exon-level changes in disease genes.</p>")
+            " Not yet tested on a known deletion.</p>")
 
 
 def write_report(out: Path, res: dict, results, dist_data, geno, cv_hits, panel_pcs, meta, user_pcs, reg) -> None:
@@ -661,9 +627,6 @@ def write_report(out: Path, res: dict, results, dist_data, geno, cv_hits, panel_
     main = [r for r in ok if r.get("category") != "blood"]
     blood = [r for r in ok if r.get("category") == "blood"]
     parts.append(by_tier(main))
-    for r in results:
-        if r.get("skipped"):
-            parts.append(f"<p class='mut'>{E(r['label'])}: not reported ({E(r['skipped'])}).</p>")
     if blood:
         parts.append("<h2>2b. Genetic tendencies for blood-test values</h2>"
                      "<p>These are <b>inherited tendencies</b>, not predictions of your blood test result. Each score "
@@ -767,10 +730,7 @@ def write_report(out: Path, res: dict, results, dist_data, geno, cv_hits, panel_
         if len(a):
             parts.append(_table(a, ["gene", "rsid", "zygosity", "condition", "significance", "type", "stars", "consequence"]))
         else:
-            parts.append("<p>None found by this research pipeline. This is <b>not</b> a negative clinical result: only ClinVar "
-                         "pathogenic/likely-pathogenic variants with at least 2 review stars, matched by exact position and allele "
-                         "(SNVs and short indels), are screened. Structural variants, copy-number changes, novel variants and variants "
-                         "classified after the ClinVar release used are not assessed.</p>")
+            parts.append("<p>None found.</p>")
         b = h[~h.acmg_sf_gene]
         b = b[(b.af_1000g.isna()) | (b.af_1000g < 0.01)]
         b = b.assign(carrier_panel=b.get("carrier_panel_gene", False).map(lambda x: "yes" if x else ""))
@@ -790,13 +750,8 @@ def write_report(out: Path, res: dict, results, dist_data, geno, cv_hits, panel_
                 parts.append(f"<h4>{title} ({len(sub)})</h4><p class='mut'>{note}</p>" + (_table(sub, cols) if len(sub) else "<p>None.</p>"))
         else:
             parts.append(_table(b, cols))
-        parts.append("<p class='mut'>How to read these: one copy of a variant in a <b>recessive</b>-disease gene usually means "
-                     "carrier status (relevant for family planning, not for your own health). A <b>risk allele</b> (for example a "
-                     "thrombophilia variant) is a different thing: it raises the chance of a condition without being a simple carrier "
-                     "state, and the SNP section explains its relative risk. ClinVar classifications can change and are condition-specific; "
-                     "inheritance is not assessed in this section (see 4b for carrier status, which also includes variants with 1000 Genomes AF of 1% or more, "
-                     "hidden here). Confirm anything that matters in a clinical laboratory. Full table: "
-                     "clinvar_pathogenic_hits.tsv.</p>")
+        parts.append("<p class='mut'>Known ClinVar SNVs and short indels only. Carrier status is in section 4b. Confirm anything that matters in a "
+                     "clinical laboratory. Full table: clinvar_pathogenic_hits.tsv.</p>")
 
     parts.extend(_cancer_html(res, cv_hits))
     parts.extend(_carrier_html(res, cv_hits))
@@ -830,27 +785,6 @@ def write_report(out: Path, res: dict, results, dist_data, geno, cv_hits, panel_
                      f"Possible heteroplasmy (alt fraction 10&ndash;90%): {len(het)} sites.</p>")
 
     cn = res.get("copynumber")
-    if cn:
-        from .copynumber import LOCI
-        rows = "".join(f"<tr><td>{E(k)}</td><td>{v['estimated_total_copies']:.1f}</td><td>{E(LOCI.get(k, v)['expected'])}</td>"
-                       f"<td>{E(LOCI.get(k, v).get('confidence', ''))}</td><td>{E(LOCI.get(k, v)['meaning'])}</td></tr>"
-                       for k, v in cn["loci"].items())
-        lp = cn["lpa"]
-        parts.append("<h2>7. Repeat- and copy-number-dependent loci (read depth)</h2>"
-                     "<p>Estimated from sequencing depth, with all reads counted so that near-identical copies are not "
-                     "lost. Each value is a <b>diploid total</b> (both chromosomes) with an error of about &plusmn;1 copy at best. "
-                     "More fundamentally, for near-identical genes (SMN1/SMN2, C4A/C4B, HBA1/HBA2) and repeat arrays (LPA KIV-2) the quantity "
-                     "that matters &mdash; gene-specific dose, isotype, or the size of each chromosome&rsquo;s array &mdash; cannot be recovered "
-                     "from total depth. Paralog-ratio assays, ddPCR, MLPA or long reads are needed; GC bias and subtelomeric mapping add "
-                     "error.</p><table><tr><th>Locus</th><th>Estimated total copies</th>"
-                     f"<th>Typical</th><th>Confidence</th><th>Interpretation and limits</th></tr>{rows}</table>"
-                     f"<p><b>LPA / Lp(a):</b> read depth over the kringle IV repeat block is {lp['repeat_block_to_unique_ratio']:.2f}&times; "
-                     "that of single-copy LPA exons. This ratio is not calibrated to a KIV-2 copy count. "
-                     "Lp(a) is driven by the size of the <i>shorter</i> isoform, which a "
-                     "total cannot reveal: a short chromosome with few repeats plus a long one can give the "
-                     "same total as two intermediate ones. Treat this as context, not an explanation, for a measured Lp(a). "
-                     "A value one copy away from typical is a hypothesis to confirm with a dedicated assay, not a finding.</p>")
-
     if cn and cn.get("cnv_screen"):
         parts.append(_cnv_screen_html(cn["cnv_screen"]))
 
@@ -865,10 +799,7 @@ def write_report(out: Path, res: dict, results, dist_data, geno, cv_hits, panel_
                  f"<li>Callability check (a variant-only VCF cannot prove absent sites are reference): hom-ref {100 * res['callability']['obs_homref']:.1f}% observed vs "
                  f"{100 * res['callability']['exp_homref']:.1f}% expected from 1000G allele frequencies; het {100 * res['callability']['obs_het']:.1f}% vs "
                  f"{100 * res['callability']['exp_het']:.1f}%; hom-alt {100 * res['callability']['obs_homalt']:.1f}% vs {100 * res['callability']['exp_homalt']:.1f}%. "
-                 "This global check cannot show that any single site or region is callable: without a gVCF, reference-confidence blocks or a "
-                 "callable-regions mask, &ldquo;absent from the VCF&rdquo; may mean homozygous reference, low depth, a masked region or a no-call. "
-                 "Difficult regions (segmental duplications, HLA, centromeres) can therefore bias a polygenic score slightly; the curated SNP "
-                 "panel is checked against the sequencing reads instead.</li>"
+                 "This global check does not show that any single site is callable.</li>"
                  "<li>&ldquo;Typical for similar scores&rdquo; uses E[trait | score] = &radic;R&sup2; &times; z. No individual interval is shown because "
                  "an interval under a simplified bivariate-normal model would not be a calibrated personal prediction interval. "
                  "It would omit: error in the published R&sup2;; transferability to your ancestry; age and sex effects; differences in "

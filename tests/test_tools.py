@@ -241,7 +241,7 @@ def test_cancer_section_separates_dominant_recessive_and_low_review():
     html = "".join(report._cancer_html({"cancer_low_review": low, "traits": []}, hits))
     assert "BRCA2 (AD)" in html and "recessive-only" in html and "BLM (AR)" in html
     assert "Lower review status" in html and "PALB2" in html
-    assert "No absolute lifetime risk is calculated" in html and "Not assessed" in html
+    assert "Not a clinical cancer test" in html and "Not assessed" not in html
 
 
 def test_hoxb13_is_a_cancer_gene():
@@ -292,8 +292,8 @@ def test_clinical_tests_map():
     assert "LDLR" in fh["result"]
     assert "no ClinVar" in rows["Cardiomyopathy panel (HCM, DCM, ARVC)"]["result"]
     assert "F5" in rows["Thrombophilia (factor V Leiden, prothrombin G20210A)"]["result"]
-    assert any(r["coverage"] == "none" for r in rows.values())
-    assert "not run" in rows["Spinal muscular atrophy (SMN1 copy number)"]["result"]
+    assert all(r["coverage"] != "none" and "not run" not in r["result"] and "not covered" not in r["result"] for r in rows.values())
+    assert not any("Spinal muscular atrophy" in t for t in rows)              # nothing tests it, so there is no row
 
 
 def test_cnv_screen_classification():
@@ -373,18 +373,13 @@ def test_carrier_findings_classify_by_inheritance_and_ignore_frequency():
     assert "can be passed" in {r["gene"]: r for r in carrier.findings(hits, sex="female")["carrier"]}["DMD"]["status"]
 
 
-def test_carrier_section_always_states_what_it_cannot_see():
+def test_carrier_section_reports_results_with_one_limit_sentence():
     import pandas as pd
-    from wgsreport import carrier
     from wgsreport.report import _carrier_html
-    page = "".join(_carrier_html({"sex": "female"}, pd.DataFrame()))
-    for gene in ("SMN1", "HBA1", "FMR1", "DMD", "CYP21A2", "F8"):
-        assert gene in page
-    assert "does not rule out being a carrier" in page and "Repeat expansions were not run" in page
-    cov = {r["gene"]: r["result"] for r in carrier.panel_coverage(pd.DataFrame())}
-    assert len(cov) == 113
-    assert cov["SMN1"].startswith("not assessed") and cov["HBA2"].startswith("not assessed")
-    assert "deletions and duplications not assessed" in cov["ASPA"]
+    page = "".join(_carrier_html({"sex": "female"}, pd.DataFrame([_hit("CFTR")])))
+    assert "CFTR" in page and page.count("does not rule out being a carrier") == 1
+    assert "<details>" not in page and "not assessed" not in page and "SMN1" not in page
+    assert _carrier_html({}, None) == []                                   # nothing screened: no section
 
 
 def test_no_result_derived_numbers_are_hardcoded_in_report_text():

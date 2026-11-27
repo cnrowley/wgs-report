@@ -53,7 +53,7 @@ variants of uncertain significance, mosaicism, genes poorly resolved by short re
 ![Clinical tests](img/08_clinical_tests.png)
 
 A map from familiar test names (familial hypercholesterolemia, cardiomyopathy and arrhythmia panels, hereditary cancer, carrier screening, hemochromatosis, alpha-1 antitrypsin, thalassemia,
-SMA, repeat disorders, pharmacogenomics and others) to what was checked in this genome and the result. **It is a research screen, not the test.** The *Coverage* column is the honest part:
+SMA, repeat disorders, pharmacogenomics and others) to what was checked in this genome and the result. **It is a research screen, not the test.** Only checks that were run are listed. The *Coverage* column says how thorough each was:
 *targeted* means named variants are read directly; *partial* means ClinVar pathogenic and likely-pathogenic SNVs and short indels plus any optional modules, without structural variants or
 variants of uncertain significance; *limited* means weak for technical reasons (for example PKD1 pseudogenes); *none* means it cannot be derived from a variant file (prenatal screening, karyotype, tumour profiling).
 The gene lists and limits are in `src/wgsreport/data/clinical_tests.tsv`; add a row to extend it.
@@ -64,9 +64,11 @@ sex-chromosome and whole-chromosome checks, mtDNA and Y haplogroups, a rare loss
 checks and the software versions and score checksums used (the provenance manifest).
 
 ## Carrier status for family planning (section 4b)
-Variants found in recessive or X-linked genes (including common ones), their status (one copy, two copies, unknown phase, X-linked by sex), risk alleles listed apart, repeat lengths relevant to children, a table of what cannot be assessed, and a collapsible gene-by-gene table for the ACMG carrier list. Compare gene by gene with a partner's results. "Nothing found" never rules out carrier status.
+![Carrier status](img/09_carrier.png)
 
-## Actionable large deletions and duplications (section 7b, needs a CRAM)
+Variants found in recessive or X-linked genes (including common ones), their status (one copy, two copies, unknown phase, X-linked by sex), risk alleles listed apart, and repeat lengths relevant to children. Only results are shown; what the method cannot assess is listed in [METHODS.md](METHODS.md). Compare gene by gene with a partner's results. "Nothing found" never rules out carrier status.
+
+## Actionable large deletions and duplications (section 7, needs a CRAM)
 Six changes at five regions, each with its documented follow-up and how strong that guidance is. It is not a genome-wide CNV search. A flag needs confirmation by an independent assay. See [METHODS.md](METHODS.md) and [VALIDATION.md](VALIDATION.md).
 
 ## The drug response summary

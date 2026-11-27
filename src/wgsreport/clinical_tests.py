@@ -1,7 +1,7 @@
-"""Common clinical genetic tests that whole-genome data can address, with this genome's result for each (see data/clinical_tests.tsv).
+"""Common clinical genetic tests that whole-genome data can address, with this genome's result for each check that was run (data/clinical_tests.tsv).
 
-Gene-group rows screen ClinVar P/LP hits already computed (exact SNV/indel matches), SNP rows read the curated panel, module rows point to an optional module
-or say it was not run. It is a map from familiar test names to what this report did, not a substitute for the clinical test."""
+Gene-group rows screen ClinVar P/LP hits already computed (exact SNV/indel matches), SNP rows read the curated panel, module rows appear only when the
+module ran. It is a map from familiar test names to what this report did, not a substitute for the clinical test."""
 from __future__ import annotations
 
 import pandas as pd
@@ -37,17 +37,10 @@ def _snps(items: str, geno) -> str:
 
 
 def _module(items: str, res: dict) -> str:
-    if items.startswith("copynumber:"):
-        key = items.split(":", 1)[1]
-        loci = ((res.get("copynumber") or {}).get("loci")) or {}
-        hit = {k: v for k, v in loci.items() if k.upper().startswith(key.upper())}
-        if not hit:
-            return "not run (needs a CRAM and `wgsreport copy-number`)"
-        return "; ".join(f"{k}: about {v['estimated_total_copies']:.1f} copies" for k, v in hit.items())
     if items == "cnvscreen":
         nc = (res.get("copynumber") or {}).get("cnv_screen")
         if not nc or nc.get("error"):
-            return "not run (needs a CRAM and `wgsreport copy-number`)"
+            return ""
         from .cnv_screen import findings
         rows = findings(nc)
         hit = [f"{f['name']}: {f['call']}" for f in rows if f["flag"]]
@@ -58,19 +51,21 @@ def _module(items: str, res: dict) -> str:
         return "see the lipoprotein(a) result in the trait section"
     if res.get(items):
         return "run: see the matching section above"
-    return "not run (optional module; see docs/USAGE.md)"
+    return ""
 
 
 def summarize(res: dict, geno, cv_hits) -> list[dict]:
+    """Rows for the checks that were actually run; anything not run or not covered is left out."""
     rows = []
     for r in load().itertuples():
-        if r.kind == "genes":
+        if r.kind == "genes" and cv_hits is not None:
             result = _genes(r.items, cv_hits)
-        elif r.kind == "snps":
+        elif r.kind == "snps" and geno["rsid"].isin(r.items.split(";")).any():
             result = _snps(r.items, geno)
         elif r.kind == "module":
             result = _module(r.items, res)
         else:
-            result = "not covered"
-        rows.append({"area": r.area, "test": r.test, "coverage": r.coverage or "none", "result": result, "limits": r.limits})
+            continue
+        if result:
+            rows.append({"area": r.area, "test": r.test, "coverage": r.coverage, "result": result})
     return rows

@@ -110,7 +110,7 @@ The positive controls below test the depth method. Most of these duplications ar
 * An early run on incompletely downloaded data reported "not detected" for regions with most bins missing; regions under 70% usable bins are now "not assessable".
 
 ## Alpha-globin depth estimate (`copynumber.py`): not usable for carrier status
-On five public genomes with no HBA deletion in the 1000G SV callset, the HBA1+HBA2 estimate read 4.5-5.3 copies (expected 4). The report labels it "not reliable" and the clinical-test map lists alpha-thalassemia as not covered. Other paralog estimates in the same five also scattered (for example RHD+RHCE 3.3-4.3); treat them as research context.
+On five public genomes with no HBA deletion in the 1000G SV callset, the HBA1+HBA2 estimate read 4.5-5.3 copies (expected 4). The report no longer shows any of these paralog estimates; they remain in results.json for research. Other paralog estimates in the same five also scattered (for example RHD+RHCE 3.3-4.3); treat them as research context.
 
 ## What this does not show
 * No ground truth exists here for polygenic scores, so score values for HG002 are not validated (the benchmark VCF holds confident-region calls only; anything absent is assumed reference).

@@ -3,33 +3,15 @@
 Which genes: ClinGen Definitive/Strong/Moderate AR or XL curations (data/gene_inheritance.tsv) plus the ACMG tier-3 carrier list
 (Gregg 2021). Variants are NOT filtered by population frequency: common carrier alleles matter most for family planning.
 
-This is not a carrier screen of laboratory standard. It matches known ClinVar SNVs and short indels only. For several of the most
-important carrier conditions the usual cause is a deletion, duplication, rearrangement or repeat that this match cannot see; those are
-listed in GAPS and shown with every report, whatever the result.
+Only results are reported. One sentence (LIMIT) states what a "nothing found" does not cover; do not add tables of untested genes.
 """
 from __future__ import annotations
 
 from .clinvar import carrier_genes
 from .registry import data_path
 
-# Genes whose carrier status this pipeline cannot establish, or only partly, and why. Qualitative only.
-GAPS = {
-    "SMN1": ("spinal muscular atrophy", "not assessed", "carriers usually have a deleted or converted SMN1 copy; the SMN1+SMN2 depth total cannot show this"),
-    "HBA1": ("alpha-thalassemia", "not assessed", "usually caused by deletions; the depth estimate is not a carrier test"),
-    "HBA2": ("alpha-thalassemia", "not assessed", "usually caused by deletions; the depth estimate is not a carrier test"),
-    "FMR1": ("fragile X syndrome", "repeat module only", "a CGG repeat: only the repeat-expansion module sizes it, and AGG interruptions are not read"),
-    "FXN": ("Friedreich ataxia", "partial", "mostly a GAA repeat (repeat-expansion module); point variants are matched here"),
-    "DMD": ("Duchenne / Becker muscular dystrophy", "partial", "exon deletions and duplications, a main cause, are not detected"),
-    "F8": ("hemophilia A", "partial", "inversions and large deletions are not detected"),
-    "CYP21A2": ("congenital adrenal hyperplasia", "unreliable", "a near-identical pseudogene causes gene conversions that short reads mis-map"),
-    "GBA1": ("Gaucher disease", "unreliable", "a pseudogene next door causes recombinant alleles that short reads mis-map"),
-    "GBA": ("Gaucher disease", "unreliable", "a pseudogene next door causes recombinant alleles that short reads mis-map"),
-    "TNXB": ("TNXB-related Ehlers-Danlos syndrome", "unreliable", "overlaps a pseudogene region that short reads mis-map"),
-    "RPGR": ("X-linked retinitis pigmentosa", "partial", "a repetitive region (ORF15) is poorly read by short reads"),
-    "CFTR": ("cystic fibrosis", "partial", "known SNVs and small indels are matched; exon deletions and duplications are not detected"),
-    "ARX": ("ARX-related disorders", "partial", "tract expansions and structural changes may be missed"),
-    "AFF2": ("fragile XE", "partial", "a repeat expansion; only sized if the repeat module covers it"),
-}
+LIMIT = ("Known ClinVar SNVs and short indels only. This is not a laboratory carrier screen: finding nothing does not rule out being a "
+         "carrier, and it misses deletions and duplications, including the usual causes of spinal muscular atrophy and alpha-thalassemia.")
 
 
 def inheritance_table() -> dict[str, dict]:
@@ -88,19 +70,3 @@ def findings(cv_hits, sex: str | None = None) -> dict:
         out["risk_allele" if risk else "carrier"].append(row)
     out["carrier"].sort(key=lambda r: (r["status"] == "carrier (one copy)", not r["acmg_panel"], r["gene"]))
     return out
-
-
-def panel_coverage(cv_hits) -> list[dict]:
-    """One row per ACMG tier-3 gene: what this pipeline can say about it."""
-    found = set() if cv_hits is None or len(cv_hits) == 0 else set(cv_hits["gene"])
-    rows = []
-    for gene, condition in carrier_genes().items():
-        gap = GAPS.get(gene)
-        if gene in found:
-            result = "ClinVar variant found (see above)"
-        elif gap and gap[1] in ("not assessed", "unreliable", "repeat module only"):
-            result = f"{gap[1]}: {gap[2]}"
-        else:
-            result = "no known ClinVar SNV/short indel found" + (f"; {gap[2]}" if gap else "; deletions and duplications not assessed")
-        rows.append({"gene": gene, "condition": condition, "result": result})
-    return rows

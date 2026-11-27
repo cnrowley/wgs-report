@@ -13,14 +13,16 @@ estimates. Everything runs locally. Read `README.md` for usage and `docs/METHODS
    genotype, sample ID, results or lab values in a URL, header, query or issue text.
 3. **Do not bundle data you may not redistribute** (GWAS summary statistics, PGC3 weights built from them,
    third-party tools such as ADMIXTURE). Scores are downloaded or built locally.
-4. **Honesty over completeness.** Every reported prediction carries a tier and its published accuracy. Never convert a
+4. **Report only what was tested.** No tables or paragraphs about genes, tests or loci that were not run or cannot be detected: leave the
+   row or section out. Where "nothing found" could be read as an all-clear, one short sentence says what was checked. Longer limits belong in `docs/`.
+5. **Honesty over completeness.** Every reported prediction carries a tier and its published accuracy. Never convert a
    percentile to absolute risk; never present a polygenic score as a diagnosis; state each result's limits next to it.
    The intended users are well versed in genetics, so do **not** hide results behind consent gates or paternalistic wording:
    APOE and the psychiatric score are computed by default (`--exclude apoe psychiatric` leaves them out). Intelligence/education
    scores were removed by the maintainer's decision and should not be re-added. Do not implement behavioural or personality
    predictions, attractiveness or similar scores. Do not add a score only because one exists: it must meet the inclusion rule at the top of
    `data/traits.yaml` or be explicitly tier C ("percentile only", on request).
-5. **Downloaded code is untrusted.** Run third-party tools from their own directory with `python -I` or as binaries; do
+6. **Downloaded code is untrusted.** Run third-party tools from their own directory with `python -I` or as binaries; do
    not widen permissions to make a blocked run work. Ask the user.
 
 ## Repo map
@@ -46,7 +48,7 @@ src/wgsreport/
   cram.py         read-level genotyping, mtDNA, FASTA from the EBI registry
   copynumber.py   read-depth copy number (LPA KIV-2, SMN, HBA, AMY1, C4, GSTM1 ...)
   cnv_screen.py   read-depth screen of a short list of actionable large CNVs; add one only if it meets the rules in data/cnv_actionable.tsv / cnv_disease.tsv
-  carrier.py      carrier status for family planning (ClinGen AR/XL + ACMG tier 3, no frequency filter; GAPS list always printed)
+  carrier.py      carrier status for family planning (ClinGen AR/XL + ACMG tier 3, no frequency filter; results plus one limit sentence)
   custom_scores.py  P+T scores built from GWAS summary statistics   measured.py  compare with the user's labs
   doctor.py       health check for tools, bundled data, upstream formats      report.py   HTML
   data/           traits.yaml  snp_panel_src.yaml -> snp_panel.tsv  acmg_sf_v3.3.tsv  af_lof_genes.tsv  acmg_carrier_tier3.tsv

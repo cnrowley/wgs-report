@@ -9,7 +9,6 @@ Cardiovascular	Lipoprotein(a)	module	lpa	partial	Genome-wide plus explicit-varia
 Cardiovascular	Thrombophilia (factor V Leiden, prothrombin G20210A)	snps	rs6025;rs1799963	targeted	Two variants; antithrombin, protein C and protein S deficiencies are in the ClinVar screen only.
 Hematology	Hereditary hemochromatosis (HFE C282Y, H63D)	snps	rs1800562;rs1799945	targeted	Penetrance is incomplete; ferritin and transferrin saturation decide clinical relevance.
 Hematology	Sickle-cell trait / hemoglobinopathy screen	snps	rs334	partial	HbS only. HBB beta-thalassemia variants are in the ClinVar screen; alpha-thalassemia (HBA deletions) needs the copy-number module.
-Hematology	Alpha-thalassemia (HBA1/HBA2 copy number)	none		none	Not covered: the read-depth estimate is not a carrier test (see the copy-number section).
 Hematology	G6PD deficiency	snps	rs1050828	partial	One A- variant; other G6PD variants are in the ClinVar screen only.
 Pulmonary / liver	Alpha-1 antitrypsin deficiency (Z and S alleles)	snps	rs28929474;rs17580	targeted	Common alleles only; rare SERPINA1 variants depend on ClinVar.
 Gastroenterology	Celiac disease HLA-DQ2.5 proxy	snps	rs2187668	partial	A proxy for DQ2.5; DQ8 is not tagged. A negative proxy makes celiac less likely, never excludes it.
@@ -17,7 +16,6 @@ Metabolic	Gilbert syndrome (UGT1A1*28 tag)	snps	rs887829	partial	Tag SNP for the
 Metabolic	Monogenic diabetes (MODY) panel	genes	HNF1A;HNF4A;GCK;HNF1B;PDX1	partial	ClinVar P/LP only; GCK and HNF1A variants of uncertain significance are not interpreted.
 Metabolic / carrier	Carrier screening (expanded panel)	genes	CFTR;HEXA;GBA;GBA1;GJB2;PAH;ASPA;SMPD1;BLM;FANCC;G6PC;ELP1;MCOLN1;SLC26A4;ACADM	partial	Single heterozygous ClinVar variants only; CFTR large rearrangements and 5T/TG-repeat variants are not assessed. A negative result does not rule out carrier status.
 Genomic disorders	Chromosomal microarray: actionable large deletions/duplications (22q11.2, 17q12, 17q11.2/NF1, 17p12/PMP22, 16p11.2)	module	cnvscreen	limited	Read-depth screen of these changes only; not a genome-wide microarray; not tested on a known deletion; needs a CRAM.
-Metabolic / carrier	Spinal muscular atrophy (SMN1 copy number)	module	copynumber:SMN	partial	Read-depth only, cannot separate SMN1 from SMN2 reliably in all cases; needs a CRAM. A clinical MLPA/qPCR test is the standard.
 Hereditary cancer	BRCA1/2, Lynch syndrome and other cancer panels	genes	BRCA1;BRCA2;MLH1;MSH2;MSH6;PMS2;EPCAM;APC;TP53;PTEN;CDH1;STK11;PALB2;ATM;CHEK2;MUTYH;BMPR1A;SMAD4;RAD51C;RAD51D;BRIP1;HOXB13	partial	Exon-level deletions and duplications (common in BRCA1, MSH2, EPCAM) are not seen; PMS2 is poorly resolved by short reads. See the cancer section.
 Vascular / renal	Hereditary hemorrhagic telangiectasia	genes	ENG;ACVRL1;SMAD4	partial	ClinVar P/LP SNVs and indels only.
 Vascular / renal	Polycystic kidney disease	genes	PKD1;PKD2	limited	PKD1 has pseudogenes that short reads resolve poorly; a negative result is weak evidence.
@@ -25,6 +23,3 @@ Neurology	Repeat-expansion disorders (Huntington, Fragile X, myotonic dystrophy,
 Genome-wide	Chromosome gains and losses / sex-chromosome aneuploidy	module	qc	limited	Read-depth dosage; detects whole-chromosome changes only, not a karyotype or microarray.
 Pharmacogenomics	Drug-response panel	module	pgx	partial	See the drug response section: limited screens of 13 genes, CPIC-based.
 Pharmacogenomics	HLA typing (abacavir B*57:01, carbamazepine B*15:02, allopurinol B*58:01)	module	hla	limited	Needs T1K on a CRAM; the SNP proxy is not HLA typing.
-Not covered	Non-invasive prenatal testing, karyotype, microarray, methylation (imprinting, Fragile X methylation)	none			Different assays, not derivable from a germline variant call file.
-Not covered	Diagnostic exome or genome interpretation for a patient with a phenotype	none			Needs phenotype-driven filtering, variants of uncertain significance, structural variants, trio data and curated classification.
-Not covered	Somatic (tumour) profiling and mosaicism	none			A germline VCF does not show tumour variants; low-level mosaicism is not called.

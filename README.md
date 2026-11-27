@@ -20,12 +20,12 @@ Turn a personal whole-genome VCF (GRCh38, e.g. from DRAGEN or GATK) into a reada
   by default, `--clinvar-min-stars 1` to widen), grouped as ACMG secondary-findings genes, homozygous, possible compound
   heterozygotes (phase unknown) and single heterozygous, plus a rare loss-of-function scan and a blood-group inference.
 * **Carrier status for family planning:** ClinVar hits in recessive and X-linked genes (ClinGen curations plus the ACMG carrier
-  list), including common alleles, with an always-printed list of what cannot be assessed (SMN1, alpha-globin, many
-  deletions and repeats). **It is not a laboratory carrier screen; finding nothing does not rule out carrier status.**
+  list), including common alleles. It misses deletions and duplications, including the usual causes of spinal muscular atrophy and
+  alpha-thalassemia. **It is not a laboratory carrier screen; finding nothing does not rule out carrier status.**
 * **Actionable large deletions/duplications (needs a CRAM):** a read-depth screen of a short list with documented follow-up
   (22q11.2, 17q12, NF1, PMP22, 16p11.2). Not a genome-wide CNV search; not yet tested on a known deletion.
 * **Optional CRAM modules:** read-level genotyping of the SNP panel, mtDNA variants, a pharmacogenomic summary,
-  a rare loss-of-function scan, repeat/copy-number estimates (research context only: LPA KIV-2, SMN, HBA, AMY1, C4, GSTM1 ...) and
+  a rare loss-of-function scan, repeat expansions, a short actionable deletion/duplication screen (other read-depth estimates go to results.json only) and
   supervised ADMIXTURE.
 * **Compare with your own lab results** (`--measured`) so the report can say where genetics and blood tests agree.
 

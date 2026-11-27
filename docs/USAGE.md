@@ -44,7 +44,7 @@ Useful flags: `--sex male|female`, `--exclude apoe psychiatric`, `--measured lab
 | Module | Needs | Command | `analyze` flag |
 |---|---|---|---|
 | Read-level SNP checks, mtDNA | CRAM + FASTA | `wgsreport cram-check --cram x.cram --fasta ref.fa ...` | `--cram-json` |
-| Copy number (LPA, SMN, HBA ...; actionable large CNVs) | CRAM + FASTA | `wgsreport copy-number --cram x.cram --fasta ref.fa` | `--copynumber-json` |
+| Actionable large CNVs (other depth estimates go to results.json only) | CRAM + FASTA | `wgsreport copy-number --cram x.cram --fasta ref.fa` | `--copynumber-json` |
 | Rare loss-of-function scan | VCF + FASTA | (inside analyze) | `--lof-scan --fasta ref.fa --kg-dir ...` |
 | Pharmacogenomics | VCF, PharmCAT (download) | `wgsreport pharmcat --vcf my.vcf.gz ...` | `--pharmcat-json` |
 | HLA typing | CRAM, T1K (download) | `wgsreport hla-type --cram x.cram ...` | `--hla-json` |
